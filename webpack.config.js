@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+var webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -33,6 +33,6 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.IgnorePlugin(new RegExp("^(fs|ipc)$"))
+    new webpack.IgnorePlugin(new RegExp('^(fs|ipc)$'))
   ]
 }
