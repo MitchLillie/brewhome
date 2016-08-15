@@ -1,0 +1,75 @@
+{
+  "_id": "xxx",
+  "user": "xxx",
+  "name": "American Wheat",
+  "style": "1D",
+  "brewHistory": [
+    {
+      "id": "xxx",
+      "date": "2016-06-06T18:25:43.511Z",
+      "notes": "Blah blah blah",
+      "equipmentId": "xxx"
+    }
+  ],
+  "ingredients": {
+    "hops": [
+      {
+        "name": "Citra",
+        "aa": 11.0,
+        "oz": 1,
+        "time": 60,
+        "type": "leaf",
+        "costOz": 5.00
+      }
+    ],
+    "fermentables": [
+      {
+        "name": "Briess 2-row",
+        "lb": 6,
+        "srm": 2.0,
+        "potential": 1.039,
+        "costLb": 1.50
+      }
+    ],
+    "water": [
+      {
+        "name": "Portland, OR",
+        "gallons": 7,
+        "boilTopOff": false,
+        "fermenterTopOff": false,
+        "baseProfile": {
+          "Ca": 2.00,
+          "Mg": 1.00,
+          "Na": 2.00,
+          "SO4": 0.00,
+          "Cl": 2.00,
+          "HCO3": 9.00,
+          "pH": 6.7
+        },
+        "additions": {
+          "CaCO3": 0,
+          "NaHCO3": 0,
+          "CaSO4": 0,
+          "CaCL2": 0,
+          "MgSO4": 0,
+          "NaCl": 0
+        }
+      }
+    ],
+    "yeast": [
+      {
+        "name": "Citrus",
+        "attenuation": 70.0,
+        "flocculation": "high",
+        "time": 0,
+        "volume": "2L",
+        "temperature": {
+          "low": 64.0,
+          "high": 71.0,
+          "actual": 67.5
+        },
+        "productionDate": "2016-06-06T18:25:43.511Z"
+      }
+    ]
+  }
+}

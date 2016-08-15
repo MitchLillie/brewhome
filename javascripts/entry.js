@@ -8,9 +8,21 @@ import ReactDOM from 'react-dom'
 // var db = nano.use('hops')
 
 import HopSection from './components/hops/HopSection'
+import MaltSection from './components/malt/MaltSection'
+
+let App = React.createClass({
+  render: () => {
+    return (
+      <div>
+        <HopSection url='https://brewhome.cloudant.com/hops' pollInterval={2000}/>
+        // <MaltSection />
+      </div>
+    )
+  }
+})
 
 ReactDOM.render(
-  <HopSection url='https://brewhome.cloudant.com/hops' pollInterval={2000}/>,
+  <App />,
   document.getElementById('content')
 )
 
