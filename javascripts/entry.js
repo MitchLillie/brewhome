@@ -15,7 +15,7 @@ let App = React.createClass({
     return (
       <div>
         <HopSection url='https://brewhome.cloudant.com/hops' pollInterval={2000}/>
-        // <MaltSection />
+        <MaltSection />
       </div>
     )
   }
