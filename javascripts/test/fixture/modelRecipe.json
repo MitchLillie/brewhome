@@ -3,6 +3,7 @@
   "user": "xxx",
   "name": "American Wheat",
   "style": "1D",
+  "gallons": 5.5,
   "brewHistory": [
     {
       "id": "xxx",
