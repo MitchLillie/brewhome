@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://www.brewersfriend.com/homebrew/recipe/calculator -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Beer Recipe Calculator - Brewer's Friend</title>
+		<meta name="keywords" content="home brew blog, beer recipes, cloud brewing, how to brew beer, brew at home, homebrew, homebrewing, recipe, hops, make beer at home, growing hops, kegging beer, brewing tips, brewing guide, howto make beer, barley, malt, LME, DME, yeast, hops, brewing equipment, lager, ale, fermenting, carboy, kegging, kegerator, wort chiller, RIMS, all grain, mash tun,lauter tun, wit, ipa, pilsner, wheat beer, hefewiezen, hefeweizen, amber ale, bitter, esb, brown ale, barley wine, bock, dunkel, scottish ale, stout, porter, belgian beer, lambic, orange beer, raspberry beer, imperial IPA">
+	<link rel="shortcut icon" href="http://www.brewersfriend.com/homebrew/images/favicon.ico">
+
+			<link rel="stylesheet" href="./Beer Recipe Calculator - Brewer&#39;s Friend_files/app_style.min.css" type="text/css" media="screen">
+		<script type="text/javascript" async="" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/analytics.js"></script><script async="" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/gtm.js"></script><script src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/bat.js" async=""></script><script async="" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/fbevents.js"></script><script type="text/javascript" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/jquery.combined.js"></script>
+	    <link href="./Beer Recipe Calculator - Brewer&#39;s Friend_files/css" rel="stylesheet" type="text/css">
+
+    <link href="./Beer Recipe Calculator - Brewer&#39;s Friend_files/css(1)" rel="stylesheet" type="text/css">
+	<meta name="description" content="Easy to use beer recipe calculator and designer. Proceed with total confidence that your brew day is going to rock!">
+	<meta property="og:title" content="Beer Recipe Calculator - Brewer&#39;s Friend">
+	<meta property="og:description" content="Easy to use beer recipe calculator and designer. Proceed with total confidence that your brew day is going to rock!">
+	<meta property="og:image" content="http://cdn.brewersfriend.com/bflogo_withwording.png">
+	<meta property="og:type" content="website">
+
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.brewersfriend.com/homebrew/images/app_72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.brewersfriend.com/homebrew/images/app_114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://www.brewersfriend.com/homebrew/images/app_144x144.png">
+	<link rel="apple-touch-icon" href="http://www.brewersfriend.com/homebrew/images/app_57x57.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1">
+
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1">
+    <link href="./Beer Recipe Calculator - Brewer&#39;s Friend_files/select2.min.css" rel="stylesheet">
+    <script src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/select2.min.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1099605606717449');
+fbq('track', "PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1099605606717449&amp;ev=PageView&amp;noscript=1"
+/&gt;</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5164512"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript>&lt;img src="//bat.bing.com/action/0?ti=5164512&amp;Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /&gt;</noscript>
+
+
+
+</head>
+
+<body>
+
+
+
+	<div id="iphoneBar" style="background: rgb(233, 255, 229);">
+		<div style="margin: auto; width: 300px; text-align: center;">
+			<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/bullet.gif" style="vertical-align: middle;" alt="bullet">
+			<a href="http://www.brewersfriend.com/iphone-app-information-page/" style="color: #333; text-decoration: underline;">Brewer's Friend iPhone Apps</a>
+			<a href="javascript: void(0);" class="closebuttonSmall" onclick="setCookie(&quot;closeiphone&quot;, &quot;1&quot;, (365 * 3)); $(&quot;#iphoneBar&quot;).slideUp();"></a>
+		</div>
+	</div>
+
+	<div id="header">
+		<a href="http://www.brewersfriend.com/"><img class="largebflogo" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/brewersfriendlogo.png" alt="Brewer&#39;s Friend Beer Brewing Software"></a>
+		<div id="titlebar">
+			<div id="titletext">
+				<h1>
+                    <img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/brewersfriendname.png" alt="Brewer&#39;s Friend Home Brewing Software">
+                    <div style="display: none;">Brewer's Friend Home Brewing Software</div>
+				</h1>
+				<p>Brewing With Total Confidence</p>
+			</div>
+
+
+				
+			<a href="https://www.brewersfriend.com/homebrew/upgrade" id="upgradelink" class="linkbutton">Upgrade Now!</a>
+		
+	<div id="loggedincontainer" onclick="javascript: toggleFloatBox();">
+	
+				
+		<div>
+			<div class="profilerow">
+				<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/gear.png" alt="settings" style="margin-left: 5px;">
+			</div>
+		</div>
+		
+		<div>
+			<div class="profilerow">
+				<img id="profileImageSmall" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/defaultprofilepic.png" alt="brewer logo" border="0">		
+			</div>
+		</div>
+		
+		<div>
+			<div class="profilerow">
+				<i>Profile</i>
+			</div>
+		</div>
+	</div>	
+		
+	<div id="loggedinfloatbox">
+		<div id="loggedindialog">
+			<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/profileboxtriangle.png" alt="Profile Box" style="position: absolute; right: 3px; top: 1px;">
+			
+			<div id="closefloatbox" style="display: block; float: right;">
+				<span class="linkbutton" style="margin: 0px; font-size: 14pt;" onclick="javascript: hideFloatBox();">X</span>
+			</div>
+			
+			<div style="line-height: 1.2em;">
+				Welcome, <br>
+				<b>Mitchell Lillie</b>
+			</div>
+			
+			<div style="display: table-cell; width: 100%; text-align: left;">
+				<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/membership_trial_mini.png" style="vertical-align: middle;" alt="Membership Logo">
+				<span style="vertical-align: middle; font-style: italic;">Trial Member</span>
+			</div>
+			
+						<div style="margin-bottom: 8px; text-align: center; font-size: 1.3em;">
+				<a href="https://www.brewersfriend.com/homebrew/upgrade" class="linkbutton" style="font-size: 12pt; font-weight: bold; color: #333;">Upgrade Now</a>
+			</div>
+						
+						<div class="redbackground" style="padding-left: 6px; margin: 10px 0 10px 0;">
+				Email Not Confirmed:
+				<span id="resendButtonProfile" style="font-weight: bold; text-decoration: underline; cursor: pointer;" onclick="javascript: resendEmailConfirmation(&#39;resendButtonProfile&#39;);">Resend</span>
+				
+								<script type="text/javascript">
+					var bResendEmailConfirmation = false;
+					function resendEmailConfirmation(buttonThatClickedThis) {
+					
+						if(bResendEmailConfirmation) {
+							return;
+						}
+												
+						bResendEmailConfirmation = true;
+						$('#' + buttonThatClickedThis).html("Sending...");
+						$('body').css("cursor", "progress");
+						$.ajax({ 
+							url: '/homebrew/resend_confirmation', 
+							type: 'GET', 
+							success:function(data) {
+								alert(data);
+								bResendEmailConfirmation = false;
+								$('#' + buttonThatClickedThis).html("Sent");
+								$('body').css("cursor", "auto");
+							},
+							error:function(request, status, error){
+								alert("An error occured resending. If this keeps up, please use the contact us form below to report the issue.");
+								bResendEmailConfirmation = false;
+								$('#'  + buttonThatClickedThis).html("Resend");
+								$('body').css("cursor", "auto");
+							}
+							
+						});
+					}
+				</script>
+			</div>
+						
+						
+			
+			<div style="border-top: 1px solid black; margin-top: 8px; padding-top: 8px;">
+				Edit Profile:
+				<div style="margin-left: 10px; line-height: 120%;">
+				<a href="https://www.brewersfriend.com/homebrew/profile">Picture and Profile</a>
+					
+											<i>(<a href="http://www.brewersfriend.com/homebrew/brewer/70205/">view profile</a>)</i>
+										
+				<br>
+				<a href="https://www.brewersfriend.com/homebrew/profile/brewsettings">General Settings</a><br>
+				<a href="https://www.brewersfriend.com/homebrew/profile/equipment">Equipment Profiles</a><br>
+				<a href="https://www.brewersfriend.com/homebrew/profile/water">Water Profiles</a><br>
+				<a href="https://www.brewersfriend.com/homebrew/profile/account">Account</a>
+				</div>
+			</div>
+
+			<div style="border-top: 1px solid black; margin-top: 8px; padding-top: 8px; text-align: right;">
+				<a href="http://www.brewersfriend.com/homebrew/logout" class="linkbutton" style="color: #333;">Sign Out</a>
+			</div>
+			
+		</div>
+	</div>
+		
+	
+
+		
+
+		</div>
+		<div id="titleaccent"></div>
+		
+<div id="navbar">
+    <a name="top"></a>
+    <ul class="menu">
+
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator#" onclick="return false;">Community</a>
+        <ul>
+            <li><a href="http://www.brewersfriend.com/blog/">Blog</a></li>
+                        <li><a href="http://www.brewersfriend.com/forum/">Forum</a></li>
+                        <li><a href="http://www.brewersfriend.com/faq">FAQs</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator#" onclick="return false;">Tools</a>
+        <ul>
+            <li><a href="http://www.brewersfriend.com/stats/">Calculators</a></li>
+            <li><a href="http://www.brewersfriend.com/brewdaysheets/">Brew Day Sheets</a></li>
+            <li><a href="http://www.brewersfriend.com/beer-charts/">Charts</a></li>
+            <li><a href="http://www.brewersfriend.com/homebrew/water-profiles/">Water Profiles</a></li>
+            <li><a href="http://www.brewersfriend.com/windows/">Windows App</a></li>
+            <li><a href="http://www.brewersfriend.com/homebrew/recipe/importbeerxml/">Import BeerXML</a></li>
+                            <li><a href="http://www.brewersfriend.com/homebrew/recipe/exportbeerxml/">Export BeerXML</a></li>
+                <li><a href="http://www.brewersfriend.com/homebrew/recipe/exportbeerhtml/">Export HTML</a></li>
+                    </ul>
+      </li>
+
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator#" onclick="return false;">Search</a>
+        <ul>
+            <li><a href="http://www.brewersfriend.com/search/">Beer Recipes</a></li>
+            <li><a href="http://www.brewersfriend.com/homebrew/search/">Site Wide Search</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator#" onclick="return false;">Browse</a>
+        <ul>
+            <li><a href="http://www.brewersfriend.com/homebrew-recipes/">Recipes</a></li>
+            <li><a href="http://www.brewersfriend.com/fermentables/">Fermentables</a></li>
+            <li><a href="http://www.brewersfriend.com/hops/">Hops</a></li>
+            <li><a href="http://www.brewersfriend.com/yeasts/">Yeast</a></li>
+            <li><a href="http://www.brewersfriend.com/other/">Other Ingredients</a></li>
+            <li><a href="http://www.brewersfriend.com/styles/">Beer Styles</a></li>
+            <li><a href="http://www.brewersfriend.com/members/">Members</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator#" onclick="return false;">My Brewing</a>
+        <ul>
+          <li><a href="http://www.brewersfriend.com/homebrew/dashboard/">My Dashboard</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/mybrewing/">My Brew Sessions</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/myrecipes/">My Recipes</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/myshopping/">My Shopping List</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/myinventory/">My Inventory</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/mynotes/">My Notes</a></li>
+                    <li><a href="http://www.brewersfriend.com/homebrew/myfriends">My Friends</a></li>
+                    <li><a href="http://www.brewersfriend.com/homebrew/mywatercalcs/">My Water Calcs</a></li>
+          <li><a href="http://www.brewersfriend.com/homebrew/brewingreport/">My Brewing Report</a></li>
+          <li><a href="https://www.brewersfriend.com/homebrew/profile/">My Profile</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="http://www.brewersfriend.com/homebrew/recipe/calculator/" style="background:none;">New Beer Recipe</a></li>
+
+
+    </ul>
+        <select id="navigationdropdown">
+            <option value="">Navigation Menu...</option>
+            <option value="http://www.brewersfriend.com/">Home</option>
+            <option value="http://www.brewersfriend.com/blog/">Blog Home</option>
+                        <option value="http://www.brewersfriend.com/forum/">Forum</option>
+            
+            <option value="http://www.brewersfriend.com/homebrew/beer/">Search Beer Recipes</option>
+            <option value="http://www.brewersfriend.com/homebrew/recipe/calculator/">New Beer Recipe</option>
+            <option value="http://www.brewersfriend.com/homebrew/dashboard/">My Brewing Dashboard</option>
+            <option value="http://www.brewersfriend.com/homebrew/mybrewing/">My Brew Sessions</option>
+            <option value="http://www.brewersfriend.com/homebrew/myrecipes/">My Recipes</option>
+            <option value="http://www.brewersfriend.com/homebrew/myshopping/">My Shopping List</option>
+            <option value="http://www.brewersfriend.com/homebrew/myinventory/">My Inventory</option>
+            <option value="http://www.brewersfriend.com/homebrew/mynotes/">My Notes</option>
+                        <option value="http://www.brewersfriend.com/homebrew/myfriends">My Friends</option>
+                        <option value="http://www.brewersfriend.com/stats/">Brewing Calculators</option>
+            <option value="http://www.brewersfriend.com/brewdaysheets/">Brew Day Sheets</option>
+            <option value="http://www.brewersfriend.com/beer-charts/">Charts</option>
+            <option value="http://www.brewersfriend.com/homebrew/water-profiles/">Water Profiles</option>
+            <option value="http://www.brewersfriend.com/homebrew/recipe/importbeerxml/">Import BeerXML</option>
+            <option value="http://www.brewersfriend.com/homebrew/search/">Search Site</option>
+        </select>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $( "#navbar select" ).navSelect();
+    });
+</script>
+		<div class="headbgcontainer">
+			<div class="headbg"></div>
+		</div>
+	</div>
+
+<div align="center" class="centerContent resp">
+	<div class="appcontent">
+
+<!--[if IE 6 ]> 
+<div class="userfeedback">
+Problem Detected!<br/><br/>
+Internet Explorer 6 is not supported. Please upgrade or switch to a newer browser such as IE 9, Firefox, Safari, or Chrome.
+</div>
+<![endif]-->
+<!--[if IE 7 ]> 
+<div class="userfeedback">
+Problem Detected!<br/><br/>
+Internet Explorer 7 is not supported. Please upgrade or switch to a newer browser such as IE 9, Firefox, Safari, or Chrome.
+</div>
+<![endif]-->
+<noscript>
+&lt;div class="userfeedback"&gt;
+Problem Detected!&lt;br/&gt;&lt;br/&gt;
+
+The Brewer's Friend Recipe Builder requires JavaScript to be enabled in your browser.&lt;br/&gt;&lt;br/&gt;
+
+In addition, we recommend using the latest version of Chrome or Firefox.
+&lt;/div&gt;
+</noscript>
+
+
+
+
+<div id="recipeeditheading" class="recipeheading">
+	<div class="appbounds">
+		<h2>Editing Recipe</h2>
+		<ul class="tabButtons">
+			<li class="tabDropdown"><a class="publish" style="width: 125px;">
+				<span onclick="$(this).trigger(&#39;mouseover&#39;);">
+					<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/wrenchIcon.png" alt="Recipe Tools Icon" style="vertical-align: top;">
+					Recipe Tools ▼</span>
+				<ul>
+					<li class="scale">Scale</li>
+					<li class="share inactive">Share</li>
+					<li class="copy inactive">Copy</li>
+					<li class="labelgenerator inactive">Label Generator</li>
+					<li class="waterrequirement inactive">Quick Water Requirements</li>
+					<li class="addtoshoppinglist inactive">Add To<br> Shopping List</li>
+					<li class="brew2nd inactive"><img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/brewbanner_small.png" style="vertical-align: bottom; margin-right: 5px;" alt="Brew!">Brew!</li>
+				</ul>
+			</a></li>
+			
+		
+			<li><a class="preview inactive" href="javascript:void(0);">View</a></li>
+			<li><a class="print inactive" href="javascript:void(0);">Print</a></li>
+            <li><a class="save" href="javascript:void(0);" value="Save">Save</a></li>
+            <li><a class="bf-tabButtons-buy_recipe_now buy-recipe-now-button" target="_blank" href="http://www.brewersfriend.com/homebrew/recipe/calculator#">Buy This Recipe</a></li>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+
+</div>
+
+
+ 
+<form name="calc" class="recipe" id="calc" _lpchecked="1">
+	
+	<div>
+		
+<div id="user_message" class="notice">
+	<div class="appbounds">
+		<span id="message"></span>
+		<a href="javascript: void(0);" class="closebutton"></a>
+	</div>
+</div>
+
+
+<div id="calsetup">
+	
+	<div class="appbounds maxtoggle">
+	
+		<a href="javascript:void(0)" class="brewBannerButton" style="display:none"></a>
+		
+		<div class="recipeSnapshotNotice">
+			<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/snapshot.png" alt="snapshot" style="vertical-align: bottom;">
+			SNAPSHOT RECIPE
+		</div>
+
+		<div class="recipeEditLeft">
+			<div class="setuprow">
+				<label>Recipe Name:</label>
+				<input type="text" name="txtrecipename" id="txtrecipename" value="" maxlength="100" class="recipeSetupText" onchange="javascript: updateAll();" style="cursor: pointer; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+			</div>
+			
+			<div class="setuprow">
+				<label>Units:</label>
+				<select name="ddunits" id="ddunits" class="recipeSetupSelect" onchange="setupUnits();">
+						<option value="us" selected="">US - (Gallons, lb, oz)</option>
+						<option value="metric">Metric - (Liters, kg, g)</option>
+				</select>
+			</div>
+			
+			<div class="setuprow">
+				<label>Brew Method:</label>
+				<select name="brewmethod" id="brewmethod" class="recipeSetupSelect" onchange="setupBrewMethod();">
+						<option value="allgrain">All Grain</option>
+						<option value="biab">BIAB</option>
+						<option value="extract" selected="">Extract</option>
+						<option value="partialmash">Partial Mash</option>
+				</select>
+			</div>
+			
+			<div class="setuprow">
+				<label>Batch Size:</label>
+				<input type="text" name="txtbatchsize" id="txtbatchsize" value="5.5" maxlength="6" style="width: 60px" onchange="javascript: updateAll();"> <span class="unit" id="unitbatchsize">(gallons)</span>
+				
+				<span id="batch_size_mode_option">
+					&nbsp; 
+					<label style="width: 39px;">Target:</label>
+					<select id="batch_size_mode" name="batch_size_mode" onchange="javascript: updateAll();" style="font-size: 95%;">
+						<option value="f" selected="">Fermentor</option>
+						<option value="k">Kettle</option>
+					</select>
+				</span>
+
+				<a href="http://www.brewersfriend.com/faq/#recipes16" class="helpButton small" target="_blank">?</a>
+			</div>
+			
+			<div class="setuprow">
+				<label>Est. Boil Size:</label>
+				<input type="text" name="txtboilsize" id="txtboilsize" value="3" maxlength="6" style="width: 60px" onchange="javascript: updateAll();"> <span class="unit" id="unitboilsize">(gallons)</span>
+				<a href="http://www.brewersfriend.com/faq/#recipes17" class="helpButton small" target="_blank">?</a>
+            </div>
+
+          
+
+		</div>
+			
+		<div class="recipeEditRight">
+			<div class="setuprow">
+				<label class="source">Author/Source:</label>
+				<input type="text" name="txtauthor" id="txtauthor" value="" maxlength="50" class="recipeSetupText" onchange="javascript: updateAll();">
+			</div>
+			<div class="setuprow">
+				<label>Style:</label>
+                    <select name="maincategory" id="maincategory" onkeyup="updatesubcategory(this.selectedIndex);" onchange="updatesubcategory(this.selectedIndex);" class="recipeSetupSelect">
+
+
+						                        <option value="--">--</option>
+						                        <option value="Standard American Beer">1. Standard American Beer</option>
+						                        <option value="International Lager">2. International Lager</option>
+						                        <option value="Czech Lager">3. Czech Lager</option>
+						                        <option value="Pale Malty European Lager">4. Pale Malty European Lager</option>
+						                        <option value="Pale Bitter European Beer">5. Pale Bitter European Beer</option>
+						                        <option value="Amber Malty European Lager">6. Amber Malty European Lager</option>
+						                        <option value="Amber Bitter European Lager">7. Amber Bitter European Lager</option>
+						                        <option value="Dark European Lager">8. Dark European Lager</option>
+						                        <option value="Strong European Beer">9. Strong European Beer</option>
+						                        <option value="German Wheat Beer">10. German Wheat Beer</option>
+						                        <option value="British Bitter">11. British Bitter</option>
+						                        <option value="Pale Commonwealth Beer">12. Pale Commonwealth Beer</option>
+						                        <option value="Brown British Beer">13. Brown British Beer</option>
+						                        <option value="Scottish Ale">14. Scottish Ale</option>
+						                        <option value="Irish Beer">15. Irish Beer</option>
+						                        <option value="Dark British Beer">16. Dark British Beer</option>
+						                        <option value="Strong British Ale">17. Strong British Ale</option>
+						                        <option value="Pale American Ale">18. Pale American Ale</option>
+						                        <option value="Amber and Brown American Beer">19. Amber and Brown American Beer</option>
+						                        <option value="American Porter and Stout">20. American Porter and Stout</option>
+						                        <option value="IPA">21. IPA</option>
+						                        <option value="Strong American Ale">22. Strong American Ale</option>
+						                        <option value="European Sour Ale">23. European Sour Ale</option>
+						                        <option value="Belgian Ale">24. Belgian Ale</option>
+						                        <option value="Strong Belgian Ale">25. Strong Belgian Ale</option>
+						                        <option value="Trappist Ale">26. Trappist Ale</option>
+						                        <option value="Historical Beer">27. Historical Beer</option>
+						                        <option value="American Wild Ale">28. American Wild Ale</option>
+						                        <option value="Fruit Beer">29. Fruit Beer</option>
+						                        <option value="Spiced Beer">30. Spiced Beer</option>
+						                        <option value="Alternative Fermentables Beer">31. Alternative Fermentables Beer</option>
+						                        <option value="Smoked Beer">32. Smoked Beer</option>
+						                        <option value="Wood Beer">33. Wood Beer</option>
+						                        <option value="Specialty Beer">34. Specialty Beer</option>
+						                        <option value="PRE-2015 STYLES -------------------">PRE-2015 STYLES -------------------</option>
+						                        <option value="Amber Hybrid Beer">7. Amber Hybrid Beer</option>
+						                        <option value="American Ale">10. American Ale</option>
+						                        <option value="Belgian and French Ale">16. Belgian and French Ale</option>
+						                        <option value="Belgian Strong Ale">18. Belgian Strong Ale</option>
+						                        <option value="English Brown Ale">11. English Brown Ale</option>
+						                        <option value="English Pale Ale">8. English Pale Ale</option>
+						                        <option value="India Pale Ale (IPA)">14. India Pale Ale (IPA)</option>
+						                        <option value="German Wheat and Rye Beer">15. German Wheat and Rye Beer</option>
+						                        <option value="Light Hybrid Beer">6. Light Hybrid Beer</option>
+						                        <option value="Porter">12. Porter</option>
+						                        <option value="Scottish and Irish Ale">9. Scottish and Irish Ale</option>
+						                        <option value="Smoke Flavored/Wood-Aged Beer">22. Smoke Flavored/Wood-Aged Beer</option>
+						                        <option value="Sour Ale">17. Sour Ale</option>
+						                        <option value="Stout">13. Stout</option>
+						                        <option value="Strong Ale">19. Strong Ale</option>
+						                        <option value="Bock">5. Bock</option>
+						                        <option value="Dark Lager">4. Dark Lager</option>
+						                        <option value="European Amber Lager">3. European Amber Lager</option>
+						                        <option value="Light Lager">1. Light Lager</option>
+						                        <option value="Pilsner">2. Pilsner</option>
+						                        <option value="Cider or Perry">28. Cider or Perry</option>
+						                        <option value="Mead">26. Mead</option>
+						                        <option value="Spice/Herb/Vegetable Beer">21. Spice/Herb/Vegetable Beer</option>
+						                        <option value="NO PROFILE SELECTED ------">NO PROFILE SELECTED ------</option>
+											</select>
+			</div>
+			<div class="setuprow">
+				<label>Sub Category:</label>
+				<select name="subcategory" id="subcategory" class="recipeSetupSelect" onchange="javascript: updateAll();"><option value="American Light Lager">1A. American Light Lager</option><option value="American Lager">1B. American Lager</option><option value="Cream Ale">1C. Cream Ale</option><option value="American Wheat Beer">1D. American Wheat Beer</option><option value="International Pale Lager">2A. International Pale Lager</option><option value="International Amber Lager">2B. International Amber Lager</option><option value="International Dark Lager">2C. International Dark Lager</option><option value="Czech Pale Lager">3A. Czech Pale Lager</option><option value="Czech Premium Pale Lager">3B. Czech Premium Pale Lager</option><option value="Czech Amber Lager">3C. Czech Amber Lager</option><option value="Czech Dark Lager">3D. Czech Dark Lager</option><option value="Munich Helles">4A. Munich Helles</option><option value="Festbier">4B. Festbier</option><option value="Helles Bock">4C. Helles Bock</option><option value="German Leichtbier">5A. German Leichtbier</option><option value="Kölsch">5B. Kölsch</option><option value="German Helles Exportbier">5C. German Helles Exportbier</option><option value="German Pils">5D. German Pils</option><option value="Märzen">6A. Märzen</option><option value="Rauchbier">6B. Rauchbier</option><option value="Dunkles Bock">6C. Dunkles Bock</option><option value="Vienna Lager">7A. Vienna Lager</option><option value="Altbier">7B. Altbier</option><option value="Kellerbier: Pale Kellerbier">7C. Kellerbier: Pale Kellerbier</option><option value="Kellerbier: Amber Kellerbier">7C. Kellerbier: Amber Kellerbier</option><option value="Munich Dunkel">8A. Munich Dunkel</option><option value="Schwarzbier">8B. Schwarzbier</option><option value="Doppelbock">9A. Doppelbock</option><option value="Eisbock">9B. Eisbock</option><option value="Baltic Porter">9C. Baltic Porter</option><option value="Weissbier">10A. Weissbier</option><option value="Dunkles Weissbier">10B. Dunkles Weissbier</option><option value="Weizenbock">10C. Weizenbock</option><option value="Ordinary Bitter">11A. Ordinary Bitter</option><option value="Best Bitter">11B. Best Bitter</option><option value="Strong Bitter">11C. Strong Bitter</option><option value="British Golden Ale">12A. British Golden Ale</option><option value="Australian Sparkling Ale">12B. Australian Sparkling Ale</option><option value="English IPA">12C. English IPA</option><option value="Dark Mild">13A. Dark Mild</option><option value="British Brown Ale">13B. British Brown Ale</option><option value="English Porter">13C. English Porter</option><option value="Scottish Light">14A. Scottish Light</option><option value="Scottish Heavy">14B. Scottish Heavy</option><option value="Scottish Export">14C. Scottish Export</option><option value="Irish Red Ale">15A. Irish Red Ale</option><option value="Irish Stout">15B. Irish Stout</option><option value="Irish Extra Stout">15C. Irish Extra Stout</option><option value="Sweet Stout">16A. Sweet Stout</option><option value="Oatmeal Stout">16B. Oatmeal Stout</option><option value="Tropical Stout">16C. Tropical Stout</option><option value="Foreign Extra Stout">16D. Foreign Extra Stout</option><option value="British Strong Ale">17A. British Strong Ale</option><option value="Old Ale">17B. Old Ale</option><option value="Wee Heavy">17C. Wee Heavy</option><option value="English Barleywine">17D. English Barleywine</option><option value="Blonde Ale">18A. Blonde Ale</option><option value="American Pale Ale">18B. American Pale Ale</option><option value="American Amber Ale">19A. American Amber Ale</option><option value="California Common">19B. California Common</option><option value="American Brown Ale">19C. American Brown Ale</option><option value="American Porter">20A. American Porter</option><option value="American Stout">20B. American Stout</option><option value="Imperial Stout">20C. Imperial Stout</option><option value="American IPA">21A. American IPA</option><option value="Specialty IPA: Belgian IPA">21B. Specialty IPA: Belgian IPA</option><option value="Specialty IPA: Black IPA">21B. Specialty IPA: Black IPA</option><option value="Specialty IPA: Brown IPA">21B. Specialty IPA: Brown IPA</option><option value="Specialty IPA: Red IPA">21B. Specialty IPA: Red IPA</option><option value="Specialty IPA: Rye IPA">21B. Specialty IPA: Rye IPA</option><option value="Specialty IPA: White IPA">21B. Specialty IPA: White IPA</option><option value="Double IPA">22A. Double IPA</option><option value="American Strong Ale">22B. American Strong Ale</option><option value="American Barleywine">22C. American Barleywine</option><option value="Wheatwine">22D. Wheatwine</option><option value="Berliner Weisse">23A. Berliner Weisse</option><option value="Flanders Red Ale">23B. Flanders Red Ale</option><option value="Oud Bruin">23C. Oud Bruin</option><option value="Lambic">23D. Lambic</option><option value="Gueuze">23E. Gueuze</option><option value="Fruit Lambic">23F. Fruit Lambic</option><option value="Witbier">24A. Witbier</option><option value="Belgian Pale Ale">24B. Belgian Pale Ale</option><option value="Bière de Garde">24C. Bière de Garde</option><option value="Belgian Blond Ale">25A. Belgian Blond Ale</option><option value="Saison">25B. Saison</option><option value="Belgian Golden Strong Ale">25C. Belgian Golden Strong Ale</option><option value="Trappist Single">26A. Trappist Single</option><option value="Belgian Dubbel">26B. Belgian Dubbel</option><option value="Belgian Tripel">26C. Belgian Tripel</option><option value="Belgian Dark Strong Ale">26D. Belgian Dark Strong Ale</option><option value="Gose">27-. Gose</option><option value="Kentucky Common">27-. Kentucky Common</option><option value="Lichtenhainer">27-. Lichtenhainer</option><option value="London Brown Ale">27-. London Brown Ale</option><option value="Piwo Grodziskie">27-. Piwo Grodziskie</option><option value="Pre-Prohibition Lager">27-. Pre-Prohibition Lager</option><option value="Pre-Prohibition Porter">27-. Pre-Prohibition Porter</option><option value="Roggenbier">27-. Roggenbier</option><option value="Sahti">27-. Sahti</option><option value="Brett Beer">28A. Brett Beer</option><option value="Mixed-Fermentation Sour Beer">28B. Mixed-Fermentation Sour Beer</option><option value="Wild Specialty Beer">28C. Wild Specialty Beer</option><option value="Fruit Beer">29A. Fruit Beer</option><option value="Fruit and Spice Beer">29B. Fruit and Spice Beer</option><option value="Specialty Fruit Beer">29C. Specialty Fruit Beer</option><option value="Spice, Herb, or Vegetable Beer">30A. Spice, Herb, or Vegetable Beer</option><option value="Autumn Seasonal Beer">30B. Autumn Seasonal Beer</option><option value="Winter Seasonal Beer">30C. Winter Seasonal Beer</option><option value="Alternative Grain Beer">31A. Alternative Grain Beer</option><option value="Alternative Sugar Beer">31B. Alternative Sugar Beer</option><option value="Classic Style Smoked Beer">32A. Classic Style Smoked Beer</option><option value="Specialty Smoked Beer">32B. Specialty Smoked Beer</option><option value="Wood-Aged Beer">33A. Wood-Aged Beer</option><option value="Specialty Wood-Aged Beer">33B. Specialty Wood-Aged Beer</option><option value="Clone Beer">34A. Clone Beer</option><option value="Mixed-Style Beer">34B. Mixed-Style Beer</option><option value="Experimental Beer">34C. Experimental Beer</option></select>
+			</div>
+			<div class="setuprow">
+				<label>Boil Time:</label>
+				<input type="text" name="txtboiltime" id="txtboiltime" value="60" maxlength="3" style="width: 60px" onchange="javascript: updateAll();"> <span class="unit">(minutes)</span>
+			</div>
+			<div class="setuprow">
+				<label>Efficiency:</label>
+				<input type="text" name="txtefficiency" id="txtefficiency" value="70" maxlength="4" style="width: 60px" onchange="javascript: updateAll();"> <span class="unit">%</span>
+				<span class="unit" id="efficiency_notes">Steeping Grains Only</span>
+				<a href="http://www.brewersfriend.com/faq/#recipes18" class="helpButton small" target="_blank">?</a>
+
+			</div>
+		</div>
+		
+        <div class="clear"></div>
+
+        <div>
+        <div class="recipeEditFull showOnNewRecipe" style="display: block;">
+            <div class="setuprow">
+                <label for="share_recipe">Share Recipe:</label>
+                <input type="checkbox" name="share_recipe" id="share_recipe" checked="checked" onchange="jQuery(&#39;.share_warning&#39;).css(&#39;visibility&#39;, &#39;hidden&#39;); return false;"> 
+                <label class="share_warning" for="share_recipe" style="visibility: hidden;">Warning: your recipe will be public unless you uncheck this box</label>
+            </div>
+        </div>
+        </div>
+
+        <div class="clear"></div>
+
+	</div>
+
+</div>
+		<div id="calStatsGreyBar">
+	<div id="arrow_ogfg" class="togglearrow togglelarge">
+		<a href="javascript:void(0);" class="arrow up"></a>
+	</div>
+	<div class="appbounds mintoggle recipeEditstats">
+		<div id="minogBatch">
+			<label>
+				Original Gravity: 
+			</label>
+			<div class="value ogBatch">-</div>
+		</div>
+		
+		<div id="minfgBatch">
+			<label>
+				Final Gravity: 
+			</label>
+			<div class="value fgBatch">-</div>
+		</div>
+		
+		<div id="minabv">
+			<label>
+				ABV: 
+			</label>
+			<div class="value abvMin">-</div>
+		</div>
+		
+		<div id="minibu">
+			<label>
+				IBU: 
+			</label>
+			<div class="value ibuMin">-</div>
+		</div>
+		
+		<div id="minsrm">
+			<label>
+				SRM: 
+			</label>
+			<div class="value srmMin">-</div>
+		</div>
+		
+		<div id="minmatchesstyle">
+			<label>
+				Matches Style: 
+			</label>
+			<div class="value">
+				<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/checkmark_grey_lght.gif" alt="no" height="24">
+				<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/checkmark_light.gif" alt="yes" height="24" style="display:none">
+			</div>
+		</div>
+		
+		<div id="minapproxcolor">
+			<label>
+				ApproxColor: 
+			</label>
+			<div class="value batchcolor">
+				<div class="color colorBatch"></div>
+				<div class="mug"></div>
+			</div>
+		</div>
+		
+		<div class="morebutton">
+			<span id="morebutton_ogfg" class="linkbutton" style="font-size: 15px; padding: 3px;">More...</span>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div class="appbounds maxtoggle" style="display:none">
+		<div class="toolheading">Advanced Recipe Options and Stats</div>
+		<div class="row">
+				<div class="recipeEditLeft" style="max-width: 420px;">
+					
+					<div>
+						<span class="statsHeading">
+							<span class="statsTitle">Equation</span>
+							<span class="statsBatch"><b>This Batch</b></span>
+							<span class="statsStyle"><b>Style</b></span>
+						</span>					
+					</div>
+					
+					<div>
+					<span class="statsRadioLabel singleLineLabel">Original Gravity</span>
+					<span class="statsBatch"><span class="ogBatch">-</span></span>
+					<span class="statsStyle"><span class="ogStyle">1.028 - 1.04</span></span>
+					</div>
+					
+					<div>
+					<span class="statsRadioLabel singleLineLabel">Final Gravity</span>
+					<span class="statsBatch"><span class="fgBatch">-</span></span>
+					<span class="statsStyle"><span class="fgStyle">0.998 - 1.008</span></span>
+					</div>
+
+					
+						
+					<div>
+					<label>
+						<input type="radio" name="abv_equation" value="standard" onchange="javascript: updateAll();" checked="checked" style="width: 16px;">
+						<span class="statsRadioLabel">ABV Standard</span>
+					</label>
+					<span class="statsBatch"><span class="abvBatch_standard">-</span></span>
+					<span class="statsStyle"><span class="abvStyle">2.8 - 4.2%</span></span>
+					</div>
+					
+					<div>
+					<label>
+						<input type="radio" name="abv_equation" value="alternate" onchange="javascript: updateAll();" style="width: 16px;">
+						<span class="statsRadioLabel">ABV Alternate</span>
+					</label>
+					<span class="statsBatch"><span class="abvBatch_alternate">-</span></span>
+					<span class="statsStyle"><span class="abvStyle">2.8 - 4.2%</span></span>
+					</div>
+					
+					
+					<div>
+						<span class="statsHeading">
+						</span>					
+					</div>
+									
+					<div>
+					<label>
+						<input type="radio" name="ibu_equation" onchange="javascript: updateAll();" value="tinseth" checked="checked" style="width: 16px;">
+						<span class="statsRadioLabel">IBU Tinseth</span>
+					</label>
+					<span class="statsBatch"><span class="ibuBatchTinseth">-</span></span>
+					<span class="statsStyle"><span class="ibuStyleTinseth">8 - 12</span></span>
+					</div>
+					
+					<div>
+					<label>
+						<input type="radio" name="ibu_equation" onchange="javascript: updateAll();" value="rager" style="width: 16px;">
+						<span class="statsRadioLabel">IBU Rager</span>
+					</label>
+					<span class="statsBatch"><span class="ibuBatchRager">-</span></span>
+					<span class="statsStyle"><span class="ibuStyleRager">8 - 12</span></span>
+					</div>
+
+					<div>
+						<span class="statsHeading">
+						</span>					
+					</div>
+				
+					<div>
+					<label>
+						<input type="radio" name="srm_equation" value="morey" onchange="javascript: updateAll();" checked="checked">
+						<span class="statsRadioLabel">SRM Morey</span>
+					</label>
+					<span class="statsBatch"><span class="srmBatchMorey">-</span></span>
+					<span class="statsStyle"><span class="srmStyleMorey">2 - 3</span></span>
+					</div>
+					
+					<div>
+					<label>
+						<input type="radio" name="srm_equation" onchange="javascript: updateAll();" value="daniels">
+						<span class="statsRadioLabel">SRM Daniels</span>
+					</label>
+					<span class="statsBatch"><span class="srmBatchDaniels">-</span></span>
+					<span class="statsStyle"><span class="srmStyleDaniels">2 - 3</span></span>
+					</div>
+					
+					<div>
+					<label>
+						<input type="radio" name="srm_equation" onchange="javascript: updateAll();" value="mosher">
+						<span class="statsRadioLabel">SRM Mosher</span>
+					</label>
+					<span class="statsBatch"><span class="srmBatchMosher">-</span></span>
+					<span class="statsStyle"><span class="srmStyleMosher">2 - 3</span></span>
+					</div>
+					
+					<div>
+					<label>
+						<input type="radio" name="srm_equation" onchange="javascript: updateAll();" value="ecbmorey">
+						<span class="statsRadioLabel">EBC Morey</span>
+					</label>
+					<span class="statsBatch"><span class="ecbBatch">-</span></span>
+					<span class="statsStyle"><span class="ecbStyle">3.9 - 5.9</span></span>
+					</div>
+					
+					<div>
+					<span class="statsTitle">Color Approximation:</span>
+					<span class="colorBatch statsBatch" style="height: 30px; width: 95px; margin: 4px; background-color: #fff;">&nbsp;</span>
+					<span class="colorStyle statsStyle" style="height: 30px; width: 95px; margin: 4px 4px 4px 0px; background-color: rgb(255, 202, 90);">&nbsp;</span>
+					</div>
+
+				</div>	
+
+				<div class="recipeEditLeft" style="max-width: 420px;">
+					
+					<div>
+						<span class="statsHeading">
+							<span class="statsTitleOneLine">Batch Stats</span>
+						</span>					
+					</div>
+					<div class="clear"></div>
+
+					<div>
+					<span class="statsLabelRight">Boil Gravity</span>
+					<span class="statsBatchRight"><span class="boilGravity">-</span></span>
+					<span class="statsStyle"></span>
+					</div>
+
+					<div style="margin-top: 5px;">
+					<span class="statsLabelRight">BU/GU ratio <a href="http://www.brewersfriend.com/faq/#recipes28" class="helpButton small" target="_blank" style="">?</a></span>
+					<span class="statsBatchRight"><span class="buguRatio">-</span></span>
+					<span class="statsStyle"></span>
+					</div>
+
+					<div>
+					<span class="statsLabelRight" id="caloriesLabel">Calories per 12oz</span>
+					<span class="statsBatchRight"><span class="calories">-</span></span>
+					<span class="statsStyle"></span>
+					</div>
+					
+					<div>
+						<span class="statsHeading" style="margin-top: 5px;">
+							<span class="statsTitleOneLine">Equipment Profile</span>
+						</span>					
+					</div>
+					<div class="clear"></div>
+					
+					<div style="margin-left: 22px; text-align: left;">
+						
+						<div style="width: 100%; text-align: center; margin-top: 4px; margin-bottom: 4px;">
+						<select name="equipment_profile_id" id="equipment_profile_id" style="width: 220px;">
+							<option value="-1">No Equipment Profile Selected</option>
+															<option value="68298" selected="">My Equipment (default)</option>
+							
+						</select> 
+						&nbsp;
+						<a href="https://www.brewersfriend.com/homebrew/profile/equipment" target="_blank" style="text-decoration: underline; color: black;">Manage</a>
+						</div>
+
+						<div style="width: 100%; text-align: center;">
+							<i>Used by water calculations and in brew feature.</i>
+							&nbsp;
+							<a href="http://www.brewersfriend.com/faq/#recipes29" class="helpButton small" target="_blank" style="">?</a>
+						</div>
+
+
+					
+						                    </div>
+
+                    <div>
+						<span class="statsHeading">
+							<span class="statsTitleOneLine">Recommended Water Profile</span>
+						</span>					
+					</div>
+					<div class="clear"></div>
+
+					<div>
+					<span class="statsLabelRight" style="width: 220px">Residual Alkalinity (as CaCO3 ppm) (Palmer)</span>
+					<span class="statsBatchRight"><span class="targetResidualAlkalinityLow">-</span> to <span class="targetResidualAlkalinityHigh">-</span></span>
+					</div>
+
+
+					
+					<div>
+						<span class="statsHeading">
+							<span class="statsTitleOneLine">Other Recipe Options</span>
+						</span>					
+					</div>
+					<div>
+						<span class="statsTitleOneLine">
+							<b>No Chill</b> - &nbsp; Extended Hop Boil Time
+							<input type="text" name="txtnochillextraminutes" id="txtnochillextraminutes" value="" style="width: 50px;" maxlength="2" onchange="javascript: updateAll();">
+							<span class="unit">min.</span>
+							<a href="http://www.brewersfriend.com/faq/#recipes11" class="helpButton small" target="_blank" style="">?</a>
+						</span>
+						<span class="statsTitleOneLine">
+							<b>Hop Utilization Multiplier</b> - &nbsp; Scale Hop Utilization Manually
+							<input type="text" name="txthop_utilization_factor" id="txthop_utilization_factor" value="" style="width: 50px;" maxlength="5" onchange="javascript: updateAll();" placeholder="1.00">
+							<span class="unit">x Utilization</span>
+							<!--<a href="http://www.brewersfriend.com/faq/#recipes11" class="helpButton small" target="_blank" style="">?</a>-->
+						</span>
+						<span class="statsTitleOneLine" style="padding-top: 3px;">
+							<b>Sugar Scale</b> -
+							
+							<label>
+								<input type="radio" name="sugar_scale" onchange="javascript: updateAll();" value="sg" checked="checked" style="width: 16px;">
+								Specific Gravity
+							</label>
+							&nbsp;&nbsp;&nbsp;
+							<label>
+								<input type="radio" name="sugar_scale" onchange="javascript: updateAll();" value="plato" style="width: 16px;">
+								Plato
+							</label>
+
+							<a href="http://www.brewersfriend.com/faq/#recipes26" class="helpButton small" target="_blank" style="">?</a>
+						</span>
+					</div>
+					
+				</div>
+
+				<input type="hidden" name="og" id="og" value="0">
+				<input type="hidden" name="fg" id="fg" value="0">
+				<input type="hidden" name="abv" id="abv" value="-">
+				<input type="hidden" name="ibutinseth" id="ibutinseth" value="0">
+				<input type="hidden" name="iburager" id="iburager" value="0">
+				<input type="hidden" name="srmmorey" id="srmmorey" value="0">
+				<input type="hidden" name="srmdaniels" id="srmdaniels" value="0">
+				<input type="hidden" name="srmmosher" id="srmmosher" value="0">
+				<input type="hidden" name="srmecbmorey" id="srmecbmorey" value="0">
+				<input type="hidden" name="recipetoken" id="recipetoken" value="">
+				<input type="hidden" name="boilgravity" id="boilgravity" value="0">
+		</div>
+	
+		<div class="clear"></div>
+		<div style="text-align: left; margin-left: 50px; margin-right: 25px; margin-top: 5px;">
+			<b>Matches styles based on stats only:</b>
+			<div id="currentStyleMatch">-</div>
+		</div>
+
+	</div>
+	
+	<div class="clear"></div>
+</div>
+	</div>
+
+	<div id="calingredients">
+		
+		
+		
+		<div class="appbounds">
+						
+				<div class="recipeEditorDataBoxLeft">
+					<div class="toolheading">Fermentables</div> 
+	
+<div class="databox">
+	<div class="items" id="fmtall_brewpartitems" style="margin-bottom: 0px; border-bottom: none;">
+		<div id="fmt_brewpartitems">
+		
+		<div id="fmt0" class="dataitem fmt expandable">
+								<input type="hidden" name="fermentableLateValue[]" id="fermentableLateValue0" value="false">
+				<span style="display: inline-block; width: 90px;">
+				
+					<input type="text" name="fermentableAmount[]" id="fermentableAmount0" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					
+					<div class="unitSelectContainer">
+						<select id="fmt_units0" name="fmt_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);"><option>lb</option><option>oz</option></select>
+					</div>
+					
+				</span>
+				<span class="XM">
+					<select name="fermentableType[]" id="fermentableType0" style="width: 285px; float: left;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"><optgroup><option value="1">--</option></optgroup><optgroup label="Dry Extract"><option value="14">Dry Malt Extract - Amber</option><option value="15">Dry Malt Extract - Dark</option><option value="189">Dry Malt Extract - Extra Light</option><option value="13">Dry Malt Extract - Light</option><option value="187">Dry Malt Extract - Munich</option><option value="188">Dry Malt Extract - Pilsen</option><option value="16">Dry Malt Extract - Wheat</option><option value="162">Rice Syrup Solids</option></optgroup><optgroup label="Liquid Extract"><option value="158">Liquid Malt Extract - Amber</option><option value="159">Liquid Malt Extract - Dark</option><option value="190">Liquid Malt Extract - Extra Light</option><option value="160">Liquid Malt Extract - Light</option><option value="240">Liquid Malt Extract - Maris Otter</option><option value="185">Liquid Malt Extract - Munich</option><option value="186">Liquid Malt Extract - Pilsen</option><option value="241">Liquid Malt Extract - Rye</option><option value="161">Liquid Malt Extract - Wheat</option></optgroup><optgroup label="Sugar"><option value="164">Belgian Candi Sugar - Clear/Blond (0L)</option><option value="167">Belgian Candi Syrup - Clear (0L)</option><option value="166">Belgian Candi Syrup - Amber (40L)</option><option value="246">Belgian Candi Syrup - D-45</option><option value="163">Belgian Candi Sugar - Amber/Brown (60L)</option><option value="169">Belgian Candi Syrup - Dark (80L)</option><option value="247">Belgian Candi Syrup - D-90</option><option value="168">Belgian Candi Syrup - D2 (160L)</option><option value="248">Belgian Candi Syrup - D-180</option><option value="165">Belgian Candi Sugar - Dark (275L)</option><option value="170">Brown Rice Syrup - Gluten Free</option><option value="171">Brown Sugar</option><option value="172">Cane Sugar</option><option value="173">Corn Sugar - Dextrose</option><option value="174">Corn Syrup</option><option value="175">Honey</option><option value="176">Honey (Buckwheat)</option><option value="177">Invert Sugar</option><option value="179">Lactose (Milk Sugar)</option><option value="191">Maltodextrin</option><option value="178">Maple Syrup</option><option value="180">Molasses</option><option value="181">Soft Candi Sugar - Blond</option><option value="182">Soft Candi Sugar - Brown</option><option value="183">White Sorghum Syrup  - Gluten Free</option><option value="184">Turbinado</option></optgroup></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 285px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-fermentableType0-container"><span class="select2-selection__rendered" id="select2-fermentableType0-container" title="--">--</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+					<span class="fmtpercentage" id="fmtpercent0" style="float: left;">%</span>
+				</span>
+				
+				
+				<span class="moreItems">
+					<span style="width: 89px; display: inline-block;"></span>
+					<span class="ingData XS" style="text-align: left; width: 53px; display: inline-block;">PPG: <span id="fmtPPGLabel0">0</span></span>
+					<span class="ingData" style="text-align: left; width: 81px; display: inline-block;">Lovibond: <span id="fmtLovibondLabel0">0</span></span>
+					<span class="ingData XS" style="text-align: left; width: 65px; display: inline-block;">OG: <span id="fmtOGContribution0"></span></span>
+					
+					<label class="fmtlate itembutton ingData">
+						<input type="checkbox" name="fermentableLate[]" id="fermentableLate0" value="true" tabindex="-1">
+						Late Addition
+					</label>
+				</span>
+				
+				<span onclick="javascript: doRemoveFermentable(0);" class="linkbutton delete">X</span>
+				<input type="button" class="morebar" value="▼">
+							</div><div id="fmt1" class="dataitem fmt expandable">
+								<input type="hidden" name="fermentableLateValue[]" id="fermentableLateValue1" value="false">
+				<span style="display: inline-block; width: 90px;">
+				
+					<input type="text" name="fermentableAmount[]" id="fermentableAmount1" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					
+					<div class="unitSelectContainer">
+						<select id="fmt_units1" name="fmt_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);"><option>lb</option><option>oz</option></select>
+					</div>
+					
+				</span>
+				<span class="XM">
+					<select name="fermentableType[]" id="fermentableType1" style="width: 285px; float: left;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"><optgroup><option value="1">--</option></optgroup><optgroup label="Dry Extract"><option value="14">Dry Malt Extract - Amber</option><option value="15">Dry Malt Extract - Dark</option><option value="189">Dry Malt Extract - Extra Light</option><option value="13">Dry Malt Extract - Light</option><option value="187">Dry Malt Extract - Munich</option><option value="188">Dry Malt Extract - Pilsen</option><option value="16">Dry Malt Extract - Wheat</option><option value="162">Rice Syrup Solids</option></optgroup><optgroup label="Liquid Extract"><option value="158">Liquid Malt Extract - Amber</option><option value="159">Liquid Malt Extract - Dark</option><option value="190">Liquid Malt Extract - Extra Light</option><option value="160">Liquid Malt Extract - Light</option><option value="240">Liquid Malt Extract - Maris Otter</option><option value="185">Liquid Malt Extract - Munich</option><option value="186">Liquid Malt Extract - Pilsen</option><option value="241">Liquid Malt Extract - Rye</option><option value="161">Liquid Malt Extract - Wheat</option></optgroup><optgroup label="Sugar"><option value="164">Belgian Candi Sugar - Clear/Blond (0L)</option><option value="167">Belgian Candi Syrup - Clear (0L)</option><option value="166">Belgian Candi Syrup - Amber (40L)</option><option value="246">Belgian Candi Syrup - D-45</option><option value="163">Belgian Candi Sugar - Amber/Brown (60L)</option><option value="169">Belgian Candi Syrup - Dark (80L)</option><option value="247">Belgian Candi Syrup - D-90</option><option value="168">Belgian Candi Syrup - D2 (160L)</option><option value="248">Belgian Candi Syrup - D-180</option><option value="165">Belgian Candi Sugar - Dark (275L)</option><option value="170">Brown Rice Syrup - Gluten Free</option><option value="171">Brown Sugar</option><option value="172">Cane Sugar</option><option value="173">Corn Sugar - Dextrose</option><option value="174">Corn Syrup</option><option value="175">Honey</option><option value="176">Honey (Buckwheat)</option><option value="177">Invert Sugar</option><option value="179">Lactose (Milk Sugar)</option><option value="191">Maltodextrin</option><option value="178">Maple Syrup</option><option value="180">Molasses</option><option value="181">Soft Candi Sugar - Blond</option><option value="182">Soft Candi Sugar - Brown</option><option value="183">White Sorghum Syrup  - Gluten Free</option><option value="184">Turbinado</option></optgroup></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 285px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-fermentableType1-container"><span class="select2-selection__rendered" id="select2-fermentableType1-container" title="--">--</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+					<span class="fmtpercentage" id="fmtpercent1" style="float: left;">%</span>
+				</span>
+				
+				
+				<span class="moreItems">
+					<span style="width: 89px; display: inline-block;"></span>
+					<span class="ingData XS" style="text-align: left; width: 53px; display: inline-block;">PPG: <span id="fmtPPGLabel1">0</span></span>
+					<span class="ingData" style="text-align: left; width: 81px; display: inline-block;">Lovibond: <span id="fmtLovibondLabel1">0</span></span>
+					<span class="ingData XS" style="text-align: left; width: 65px; display: inline-block;">OG: <span id="fmtOGContribution1"></span></span>
+					
+					<label class="fmtlate itembutton ingData">
+						<input type="checkbox" name="fermentableLate[]" id="fermentableLate1" value="true" tabindex="-1">
+						Late Addition
+					</label>
+				</span>
+				
+				<span onclick="javascript: doRemoveFermentable(1);" class="linkbutton delete">X</span>
+				<input type="button" class="morebar" value="▼">
+							</div></div>
+	</div>	
+	<div class="items">
+		<div id="cfmt_brewpartitems">
+		
+		</div>
+	</div>
+
+	<div style="margin: -5px 0px 15px 0px; color: #6e6e6e; font-size: 9pt;">
+	<span class="ingData" style="padding-left: 7px;">Total:</span>
+	<span class="ingData" id="totalGrainWeight">-</span>
+	</div>
+
+	<span onclick="javascript: addSection(&#39;fmt&#39;);" class="linkbutton">Add</span>
+	
+	<span onclick="javascript: addSection(&#39;cfmt&#39;);" class="linkbutton">Add Custom</span>
+	
+	<span onclick="javascript: openAllMores(&#39;fmtall_brewpartitems&#39;);" class="linkbutton">▼ All</span>
+	
+	<span onclick="javascript: closeAllMores(&#39;fmtall_brewpartitems&#39;);" class="linkbutton">▲ All</span>
+	
+	<span onclick="javascript: sortFermentables();" class="linkbutton">Sort Fermentables</span>
+
+	
+	<a href="http://www.brewersfriend.com/faq/#recipes19" class="helpButton small" target="_blank" style="float: right; margin-right: 10px;">?</a>
+
+	<div style="display:none; visibility:hidden;">
+		<div id="fmt_template">
+			<div id="fmt" class="dataitem fmt expandable">
+								<input type="hidden" name="fermentableLateValue[]" id="fermentableLateValue" value="false">
+				<span style="display: inline-block; width: 90px;">
+				
+					<input type="text" name="fermentableAmount[]" id="fermentableAmount" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					
+					<div class="unitSelectContainer">
+						<select id="fmt_units" name="fmt_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);">
+							<option>lb</option>
+							<option>oz</option>
+						</select>
+					</div>
+					
+				</span>
+				<span class="XM">
+					<select name="fermentableType[]" id="fermentableType" style="width: 285px; float: left;"></select>
+					<span class="fmtpercentage" id="fmtpercent" style="float: left;">%</span>
+				</span>
+				
+				
+				<span class="moreItems">
+					<span style="width: 89px; display: inline-block;"></span>
+					<span class="ingData XS" style="text-align: left; width: 53px; display: inline-block;">PPG: <span id="fmtPPGLabel"></span></span>
+					<span class="ingData" style="text-align: left; width: 81px; display: inline-block;">Lovibond: <span id="fmtLovibondLabel"></span></span>
+					<span class="ingData XS" style="text-align: left; width: 65px; display: inline-block;">OG: <span id="fmtOGContribution"></span></span>
+					
+					<label class="fmtlate itembutton ingData">
+						<input type="checkbox" name="fermentableLate[]" id="fermentableLate" value="true" tabindex="-1">
+						Late Addition
+					</label>
+				</span>
+				
+				<span onclick="javascript: doRemoveCustomFermentable();" class="linkbutton delete">X</span>
+				<input type="button" class="morebar" value="▼">
+							</div>
+		</div>
+		<div id="cfmt_template">
+			<div id="cfmt" class="dataitem cfmt" style="min-height: 70px;">
+				
+				<span style="display: inline-block; width: 90px;">
+					<input type="text" name="custfermentableAmount[]" id="custfermentableAmount" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					<div class="unitSelectContainer">
+						<select id="custfmt_units" name="custfmt_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);">
+							<option>lb</option>
+							<option>oz</option>
+						</select>
+					</div>
+				</span>
+				<span class="XM">
+					<input type="text" name="custfermentableType[]" id="custfermentableType" value="" maxlength="75" style="width: 278px; float: left;">
+					<span class="fmtpercentage" id="custfmtpercent" style="float: left;">%</span>
+				</span>
+				<br>
+				
+				<span style="width: 80px; display: inline-block;"></span>
+				<span class="ingData">PPG:</span>
+				<span><input type="text" name="custfermentablePPG[]" id="custfermentablePPG" value="" maxlength="6" style="width: 32px"></span>
+				
+				<span class="ingData">Lovi:</span>
+				<span><input type="text" name="custfermentableColor[]" id="custfermentableColor" value="" maxlength="6" style="width: 32px"></span>
+				
+				<span class="ingData XS" style="text-align: left; width: 77px; display: inline-block; padding-left: 1px;">OG: <span id="custfmtOGContribution"></span></span>
+				
+				<br>
+				<span style="width: 78px; display: inline-block;"></span>
+				<label class="fmtlate itembutton ingData" style="text-align: right; display: inline-block;">
+					<input type="checkbox" name="custfermentableLate[]" id="custfermentableLate" value="true">
+					Late Addition
+				</label>
+				<label class="fmtlate itembutton ingData"> 
+					<input type="checkbox" name="custfermentableMashed[]" id="custfermentableMashed" value="true" checked="checked">
+					Mashed
+				</label>
+				
+				<input type="hidden" name="custfermentableMashedValue[]" id="custfermentableMashedValue" value="false">
+				<input type="hidden" name="custfermentableLateValue[]" id="custfermentableLateValue" value="false">
+				<span onclick="javascript: doRemoveCustomFermentable();" class="linkbutton delete">X</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div id="steepinggrains" style="visibility: visible; display: block;">
+	<div class="toolheading">Steeping Grains</div> 
+	<div class="databox">
+		<div id="stp_brewpartitems" class="items">
+		
+		<div id="stp0" class="dataitem stp">
+					<span style="display: inline-block; width: 90px;">
+						<input type="text" name="steepingGrainAmount[]" id="steepingGrainAmount0" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;"> 
+						<div class="unitSelectContainer">
+							<select id="stp_units0" name="stp_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);"><option>lb</option><option>oz</option></select>
+						</div>
+					</span>
+					<span class="XM">
+						<select name="steepingGrainType[]" id="steepingGrainType0" style="width: 285px; float: left;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"><optgroup><option value="1">--</option></optgroup><optgroup label="Adjunct"><option value="2">Flaked Barley</option><option value="3">Flaked Corn</option><option value="4">Flaked Oats</option><option value="5">Flaked Rice</option><option value="6">Flaked Rye</option><option value="7">Flaked Wheat</option><option value="8">Grits</option><option value="9">Rice Hulls</option><option value="10">Rolled Oats</option><option value="11">Torrified Barley</option><option value="12">Torrified Wheat</option></optgroup><optgroup label="Grain"><option value="17">American - Aromatic Malt</option><option value="18">American - Ashbourne Mild</option><option value="19">American - Black Barley</option><option value="20">American - Black Malt</option><option value="21">American - Blackprinz</option><option value="22">American - Bonlander Munich</option><option value="193">American - Buckwheat Malt - Gluten Free</option><option value="23">American - CaraBrown</option><option value="24">American - CaraCrystal Wheat Malt</option><option value="25">American - Caramel / Crystal 10L</option><option value="26">American - Caramel / Crystal 15L</option><option value="27">American - Caramel / Crystal 20L</option><option value="28">American - Caramel / Crystal 30L</option><option value="29">American - Caramel / Crystal 40L</option><option value="30">American - Caramel / Crystal 60L</option><option value="31">American - Caramel / Crystal 75L</option><option value="32">American - Caramel / Crystal 80L</option><option value="33">American - Caramel / Crystal 90L</option><option value="34">American - Caramel / Crystal 120L</option><option value="35">American - Caramel / Crystal 150L</option><option value="36">American - Carapils (Dextrine Malt)</option><option value="37">American - Chocolate</option><option value="198">American - Crystal 10L Millet Malt - Gluten Free</option><option value="199">American - Crystal 30L Millet Malt - Gluten Free</option><option value="38">American - Dark Chocolate</option><option value="197">American - Dark Roasted Millet Malt - Gluten Free</option><option value="195">American - Light Roasted Millet Malt - Gluten Free</option><option value="196">American - Medium Roasted Millet Malt - Gluten Free</option><option value="39">American - Midnight Wheat Malt</option><option value="40">American - Munich - Light 10L</option><option value="194">American - Munich Millet Malt - Gluten Free</option><option value="41">American - Munich - Dark 20L</option><option value="42">American - Munich - 60L</option><option value="43">American - Pale 2-Row</option><option value="44">American - Pale 2-Row - Toasted</option><option value="45">American - Pale 6-Row</option><option value="46">American - Pale Ale</option><option value="192">American - Pale Millet Malt - Gluten Free</option><option value="47">American - Pilsner</option><option value="48">American - Red Wheat</option><option value="49">American - Roasted Barley</option><option value="50">American - Rye</option><option value="51">American - Smoked Malt</option><option value="52">American - Special Roast</option><option value="53">American - Victory</option><option value="54">American - Vienna</option><option value="55">American - Wheat</option><option value="56">American - White Wheat</option><option value="57">Belgian - Aromatic</option><option value="58">Belgian - Biscuit</option><option value="59">Belgian - Cara 20L</option><option value="60">Belgian - Cara 45L</option><option value="61">Belgian - Caramel Pils</option><option value="62">Belgian - CaraMunich</option><option value="63">Belgian - CaraVienne</option><option value="64">Belgian - Chocolate</option><option value="65">Belgian - De-Bittered Black</option><option value="66">Belgian - Munich</option><option value="67">Belgian - Pale Ale</option><option value="68">Belgian - Pilsner</option><option value="69">Belgian - Roasted Barley</option><option value="70">Belgian - Special B</option><option value="71">Belgian - Unmalted Wheat</option><option value="72">Belgian - Wheat</option><option value="73">Canadian - ESB Malt</option><option value="74">Canadian - Honey Malt</option><option value="75">Canadian - Munich Dark</option><option value="76">Canadian - Munich Light</option><option value="77">Canadian - Pale 2-Row</option><option value="78">Canadian - Pale Wheat</option><option value="218">Finland - Black Malt</option><option value="208">Finland - Cara Pale</option><option value="214">Finland - Cara Plus 100</option><option value="215">Finland - Cara Plus 150</option><option value="216">Finland - Cara Plus 200</option><option value="217">Finland - Cara Plus 250</option><option value="219">Finland - Chocolate Malt</option><option value="220">Finland - Cookie Malt</option><option value="210">Finland - Crystal Malt 100</option><option value="211">Finland - Crystal Malt 150</option><option value="212">Finland - Crystal Malt 250</option><option value="213">Finland - Crystal Malt 300</option><option value="209">Finland - Crystal Malt 50</option><option value="205">Finland - Dark Ale</option><option value="222">Finland - Enzyme Malt</option><option value="204">Finland - Melanoid Malt</option><option value="206">Finland - Munich Malt</option><option value="202">Finland - Organic Pilsner Malt</option><option value="203">Finland - Pale Ale Malt</option><option value="201">Finland - Pilsner Malt</option><option value="207">Finland - Vienna Malt</option><option value="221">Finland - Wheat Malt</option><option value="79">German - Abbey Malt</option><option value="80">German - Acidulated Malt</option><option value="81">German - Bohemian Pilsner</option><option value="82">German - CaraAmber</option><option value="83">German - CaraAroma</option><option value="84">German - CaraBelge</option><option value="85">German - CaraBohemian</option><option value="86">German - Carafa I</option><option value="87">German - Carafa II</option><option value="88">German - Carafa III</option><option value="89">German - CaraFoam</option><option value="90">German - CaraHell</option><option value="91">German - Caramel Pils</option><option value="92">German - Caramel Wheat</option><option value="93">German - CaraMunich I</option><option value="94">German - CaraMunich II</option><option value="95">German - CaraMunich III</option><option value="96">German - Carapils</option><option value="97">German - CaraRed</option><option value="98">German - Chocolate Rye</option><option value="99">German - Chocolate Wheat</option><option value="100">German - Dark Munich</option><option value="101">German - Dark Wheat</option><option value="102">German - De-Husked Caraf I</option><option value="103">German - De-Husked Caraf II</option><option value="104">German - De-Husked Caraf III</option><option value="105">German - Floor-Malted Bohemian Pilsner</option><option value="106">German - Floor-Malted Bohemian Pilsner Dk</option><option value="107">German - Floor-Malted Bohemian Wheat</option><option value="108">German - Kölsch</option><option value="109">German - Melanoidin</option><option value="110">German - Munich Dark</option><option value="111">German - Munich Light</option><option value="112">German - Pale Ale</option><option value="113">German - Pale Wheat</option><option value="114">German - Pilsner</option><option value="239">German - Red X</option><option value="115">German - Rye</option><option value="116">German - Smoked Malt</option><option value="117">German - Spelt Malt</option><option value="118">German - Vienna</option><option value="119">German - Wheat Malt</option><option value="242">Ireland - Ale Malt</option><option value="245">Ireland - Distillers Malt</option><option value="243">Ireland - Lager Malt</option><option value="244">Ireland - Stout Malt</option><option value="120">United Kingdom - Amber</option><option value="121">United Kingdom - Black Patent</option><option value="122">United Kingdom - Brown</option><option value="123">United Kingdom - Cara Malt</option><option value="124">United Kingdom - Carastan (30/37)</option><option value="125">United Kingdom - Carastan Light (15L)</option><option value="126">United Kingdom - Chocolate</option><option value="127">United Kingdom - Coffee Malt</option><option value="128">United Kingdom - Crystal 15L</option><option value="129">United Kingdom - Crystal 30L</option><option value="130">United Kingdom - Crystal 45L</option><option value="131">United Kingdom - Crystal 50L</option><option value="132">United Kingdom - Crystal 60L</option><option value="133">United Kingdom - Crystal 70L</option><option value="134">United Kingdom - Crystal 90L</option><option value="135">United Kingdom - Crystal 140L</option><option value="136">United Kingdom - Crystal Rye</option><option value="137">United Kingdom - Dextrine Malt</option><option value="138">United Kingdom - Dark Crystal 80L</option><option value="139">United Kingdom - Extra Dark Crystal 120L</option><option value="140">United Kingdom - Extra Dark Crystal 160L</option><option value="141">United Kingdom - Golden Naked Oats</option><option value="142">United Kingdom - Golden Promise</option><option value="143">United Kingdom - Halcyon</option><option value="144">United Kingdom - Lager</option><option value="145">United Kingdom - Malted Naked Oats</option><option value="146">United Kingdom - Maris Otter Pale</option><option value="147">United Kingdom - Mild</option><option value="148">United Kingdom - Munich</option><option value="149">United Kingdom - Oat Malt</option><option value="150">United Kingdom - Optic</option><option value="151">United Kingdom - Pale 2-Row</option><option value="152">United Kingdom - Pale Chocolate</option><option value="153">United Kingdom - Pearl</option><option value="154">United Kingdom - Peated Malt</option><option value="155">United Kingdom - Pilsen</option><option value="156">United Kingdom - Roasted Barley</option><option value="157">United Kingdom - Wheat</option></optgroup><optgroup label="Fruit"><option value="249">Acerola</option><option value="250">Apple</option><option value="223">Apricot</option><option value="251">Apricot (dried)</option><option value="224">Banana</option><option value="252">Blackberry</option><option value="225">Blueberry</option><option value="253">Boysenberry</option><option value="254">Cantaloupe</option><option value="255">Carambola</option><option value="256">Carrot</option><option value="257">Casaba Melon</option><option value="258">Cashew</option><option value="259">Celery</option><option value="226">Cherry</option><option value="260">Cherry, dark sweet</option><option value="261">Cherry, Montmorency</option><option value="262">Crabapple</option><option value="227">Cranberry</option><option value="263">Currant, black</option><option value="264">Currant, red</option><option value="228">Date</option><option value="265">Date (dried)</option><option value="266">Dewberry</option><option value="267">Elderberry</option><option value="268">Fig</option><option value="269">Figs (dried)</option><option value="229">Gooseberry</option><option value="271">Grape</option><option value="270">Grape, concord</option><option value="272">Grapefruit</option><option value="273">Guanabana</option><option value="274">Guava</option><option value="275">Honeydew Melon</option><option value="276">Jackfruit</option><option value="277">Kiwi</option><option value="278">Lemon juice</option><option value="230">Lime</option><option value="279">Lime juice</option><option value="281">Loganberry</option><option value="280">Lychee (Litchi)</option><option value="231">Mango</option><option value="283">Maple Sap</option><option value="282">Maple Syrup</option><option value="284">Mulberry</option><option value="285">Nectarine</option><option value="303">Orange</option><option value="304">Orange (Blood Orange)</option><option value="286">Orange juice</option><option value="287">Papaya</option><option value="288">Passionfruit</option><option value="232">Peach</option><option value="233">Pear</option><option value="289">Persimmon</option><option value="234">Pineapple</option><option value="235">Plum</option><option value="290">Pomegranate</option><option value="291">Prickly Pear</option><option value="292">Prunes (dried)</option><option value="293">Quince</option><option value="294">Raisins (dried)</option><option value="236">Raspberry</option><option value="295">Raspberry, black</option><option value="296">Raspberry, red</option><option value="297">Rhubarb</option><option value="237">Strawberry</option><option value="298">Sultanas</option><option value="300">Tangelo</option><option value="299">Tangerine</option><option value="301">Tomato</option><option value="238">Watermelon</option><option value="302">Youngberry</option></optgroup></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 285px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-steepingGrainType0-container"><span class="select2-selection__rendered" id="select2-steepingGrainType0-container" title="--">--</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+						<span class="fmtpercentage" id="steeppercent0" style="float: left;">%</span>
+					</span>
+					<span class="moreItems">
+						<span style="display: inline-block; width: 89px;"></span>
+						<span class="ingData XS" style="text-align: left; width: 57px; display: inline-block;">PPG: <span id="stpPPGLabel0">0</span></span>
+						<span class="ingData" style="text-align: left; width: 81px; display: inline-block;">Lovibond: <span id="stpLovibondLabel0">0</span></span>
+						<span class="ingData XS" style="text-align: left; width: 80px; display: inline-block;">OG: <span id="stpOGContribution0"></span></span>
+					</span>
+					<span onclick="javascript: doRemoveSteepingGrain(0);" class="linkbutton delete">X</span>
+					<input type="button" class="morebar" value="▼">
+				</div></div>
+		
+		<span onclick="javascript: addSection(&#39;stp&#39;);" class="linkbutton">Add</span> 
+	
+		<span onclick="javascript: openAllMores(&#39;stp_brewpartitems&#39;);" class="linkbutton">▼ All</span>
+		
+		<span onclick="javascript: closeAllMores(&#39;stp_brewpartitems&#39;);" class="linkbutton">▲ All</span>
+		
+		<a href="http://www.brewersfriend.com/faq/#recipes20" class="helpButton small" target="_blank" style="float: right; margin-right: 10px;">?</a>
+		
+		<div style="display:none; visibility:hidden;">
+			<div id="stp_template">
+				<div id="stp" class="dataitem stp">
+					<span style="display: inline-block; width: 90px;">
+						<input type="text" name="steepingGrainAmount[]" id="steepingGrainAmount" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;"> 
+						<div class="unitSelectContainer">
+							<select id="stp_units" name="stp_units[]" onchange="switchAmountUnit(this, &#39;fermentable&#39;);">
+								<option>lb</option>
+								<option>oz</option>
+							</select>
+						</div>
+					</span>
+					<span class="XM">
+						<select name="steepingGrainType[]" id="steepingGrainType" style="width: 285px; float: left;"></select>
+						<span class="fmtpercentage" id="steeppercent" style="float: left;">%</span>
+					</span>
+					<span class="moreItems">
+						<span style="display: inline-block; width: 89px;"></span>
+						<span class="ingData XS" style="text-align: left; width: 57px; display: inline-block;">PPG: <span id="stpPPGLabel"></span></span>
+						<span class="ingData" style="text-align: left; width: 81px; display: inline-block;">Lovibond: <span id="stpLovibondLabel"></span></span>
+						<span class="ingData XS" style="text-align: left; width: 80px; display: inline-block;">OG: <span id="stpOGContribution"></span></span>
+					</span>
+					<span onclick="javascript: doRemoveSteepingGrain();" class="linkbutton delete">X</span>
+					<input type="button" class="morebar" value="▼">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>					
+					<div id="mashsteps" style="visibility: hidden; display: none;">
+<div class="toolheading">Mash Guidelines</div> 
+<div class="databox" style="padding-bottom: 0px;">
+
+	<div id="startingMashThickness" class="dataitem" style="margin-bottom: 2px; padding-bottom: 0px; display: none;">
+		Starting Mash Thickness:
+		<input type="text" name="mash_thickness" id="mash_thickness" value="" maxlength="255" style="width: 50px;">
+		<span class="mash_thickness_unit">qt/lb</span>
+	</div>
+
+	<div id="mashStep_brewpartitems" class="items">
+	
+	<div id="mashStep0" class="dataitem">
+				<div>
+					<span class="KXS">Temp:</span>
+								
+					<span class="KM">
+						<input type="text" name="mashTemp[]" id="mashTemp0" value="" maxlength="4" style="width: 50px;">
+						<span class="unit" style="margin-right: 10px;" id="unit_mashtemp_0">F</span>
+					</span>
+					
+					<span class="XXS">Time:</span>
+					
+                    <span>
+                        <input type="text" name="mashTime[]" id="mashTime0" value="" maxlength="3" style="width: 40px;">
+						<span class="unit" style="margin-right: 10px;">min</span>
+                    </span>
+						
+					<span style="display: inline-block;">
+						<span class="KXS" style="margin-right: 3px;">Amount:</span>
+						<input type="text" name="mashAmount[]" id="mashAmount0" value="" maxlength="6" style="width: 40px;"> 
+
+						<div class="unitSelectContainer" style="display: inline-block; float: none; vertical-align: middle; width: 35px;">
+							<select id="mash_units0" name="mash_units[]" onchange="switchAmountUnit(this, &#39;mash&#39;);" style="width: 55px;"><option>qt</option><option>gal</option></select>
+						</div>
+					</span>
+				</div>
+				<div>
+					<span class="KXS">Type:</span>
+					<span>
+						<select name="mashType[]" id="mashType0" style="width: 108px">
+							<option>--</option>
+							<option>Decoction</option>
+							<option>Fly Sparge</option>
+							<option>Infusion</option>
+							<option>Sparge</option>
+							<option>Temperature</option>
+						</select>
+					</span>
+					<span>Desc:</span> 
+			
+					<span>
+						<input type="text" name="mashName[]" id="mashName0" value="" maxlength="255" style="width: 178px">
+					</span>
+				</div>	
+				<span onclick="javascript: doRemoveMashStep(0);" class="linkbutton delete">X</span>
+			</div></div>
+	
+	<div class="buttons">
+		<span onclick="javascript: addSection(&#39;mashStep&#39;);" class="linkbutton">Add</span>
+		<a href="http://www.brewersfriend.com/faq/#recipes22" class="helpButton small" target="_blank" style="float: right; margin-right: 10px;">?</a>	
+	</div>
+
+	<div style="display:none; visibility:hidden;">
+		<div id="mashStep_template">
+			<div id="mashStep" class="dataitem">
+				<div>
+					<span class="KXS">Temp:</span>
+								
+					<span class="KM">
+						<input type="text" name="mashTemp[]" id="mashTemp" value="" maxlength="4" style="width: 50px;">
+						<span class="unit" style="margin-right: 10px;" id="unit_mashtemp_">F</span>
+					</span>
+					
+					<span class="XXS">Time:</span>
+					
+                    <span>
+                        <input type="text" name="mashTime[]" id="mashTime" value="" maxlength="3" style="width: 40px;">
+						<span class="unit" style="margin-right: 10px;">min</span>
+                    </span>
+						
+					<span style="display: inline-block;">
+						<span class="KXS" style="margin-right: 3px;">Amount:</span>
+						<input type="text" name="mashAmount[]" id="mashAmount" value="" maxlength="6" style="width: 40px;"> 
+
+						<div class="unitSelectContainer" style="display: inline-block; float: none; vertical-align: middle; width: 35px;">
+							<select id="mash_units" name="mash_units[]" onchange="switchAmountUnit(this, &#39;mash&#39;);" style="width: 55px;">
+								<option>qt</option>
+								<option>gal</option>
+							</select>
+						</div>
+					</span>
+				</div>
+				<div>
+					<span class="KXS">Type:</span>
+					<span>
+						<select name="mashType[]" id="mashType" style="width: 108px">
+							<option>--</option>
+							<option>Decoction</option>
+							<option>Fly Sparge</option>
+							<option>Infusion</option>
+							<option>Sparge</option>
+							<option>Temperature</option>
+						</select>
+					</span>
+					<span>Desc:</span> 
+			
+					<span>
+						<input type="text" name="mashName[]" id="mashName" value="" maxlength="255" style="width: 178px">
+					</span>
+				</div>	
+				<span onclick="javascript: doRemoveMashStep();" class="linkbutton delete">X</span>
+			</div>
+	
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>		
+</div>
+							
+					<div class="toolheading">Yeast</div> 
+<div class="databox padded" style="">
+	<div style="background-color: #F6F6F6; padding: 5px; margin-bottom: 5px;">
+		<span style="display: inline-block; width: 105px;">Yeast Brand Filter:</span>
+		<select name="yeastbrand" id="yeastbrand" onchange="javascript: updateYeastBrand();">
+			<option value="">-- All Yeast Brands --</option>
+			<option value="Danstar">Danstar</option>
+			<option value="East Coast Yeast">East Coast Yeast</option>
+			<option value="Fermentis / Safale">Fermentis / Safale</option>
+			<option value="GigaYeast">GigaYeast</option>
+			<option value="Imperial Yeast">Imperial Yeast</option>
+			<option value="Inland Island Yeast">Inland Island Yeast</option>
+			<option value="Mangrove Jack">Mangrove Jack</option>
+			<option value="Omega Yeast Labs">Omega Yeast Labs</option>
+			<option value="Real Brewers">Real Brewers</option>
+			<option value="Siebel Institute">Siebel Institute</option>
+			<option value="White Labs">White Labs</option>
+			<option value="Wyeast">Wyeast</option>
+			<option value="The Yeast Bay">The Yeast Bay</option>
+			<option value="-">Others</option>	
+		</select>
+		<br>
+		<span style="display: inline-block; width: 105px;">	Yeast Variety:</span>
+		<select name="yeast" id="yeast" onchange="javascript: updateAll();" style="width:325px"><optgroup label="Default"><option value="1">- -</option></optgroup><optgroup label="White Labs"><option value="2">Abbey Ale Yeast WLP530</option><option value="3">Abbey IV Ale Yeast WLP540</option><option value="4">American Ale Yeast Blend WLP060</option><option value="131">American Farmhouse Blend WLP670</option><option value="5">American Hefeweizen Ale Yeast WLP320</option><option value="6">American Lager Yeast WLP840</option><option value="165">American Whiskey WLP065</option><option value="7">Antwerp Ale Yeast WLP515</option><option value="8">Australian Ale Yeast WLP009</option><option value="9">Bavarian Weizen Yeast WLP351</option><option value="10">Bedford British WLP006</option><option value="11">Belgian Ale Yeast WLP550</option><option value="12">Belgian Bastogne Ale Yeast WLP510</option><option value="13">Belgian Golden Ale Yeast WLP570</option><option value="128">Belgian Lager Yeast WLP815</option><option value="14">Belgian Saison I Yeast WLP565</option><option value="15">Belgian Saison II Yeast WLP566</option><option value="155">Belgian Saison III Yeast WLP585</option><option value="171">Belgian Sour Mix WLP655</option><option value="127">Belgian Strong Ale Yeast WLP545</option><option value="16">Belgian Style Ale Yeast Blend WLP575</option><option value="17">Belgian Style Saison Blend WLP568</option><option value="18">Belgian Wit Ale Yeast WLP400</option><option value="19">Belgian Wit II Ale Yeast WLP410</option><option value="130">Berliner Weisse Blend WLP630</option><option value="166">Bourbon Yeast WLP070</option><option value="172">Brettanomyces Bruxellensis WLP650</option><option value="173">Brettanomyces Bruxellensis Trois WLP644</option><option value="327">Brettanomyces Bruxellensis Trois Vrai WLP648</option><option value="174">Brettanomyces Claussenii WLP645</option><option value="175">Brettanomyces Lambicus WLP653</option><option value="20">British Ale Yeast WLP005</option><option value="21">Burton Ale Yeast WLP023</option><option value="22">California Ale V Yeast WLP051</option><option value="23">California Ale Yeast WLP001</option><option value="24">Champagne Yeast WLP715</option><option value="157">Copenhagen Lager Yeast WLP850</option><option value="25">Cream Ale Yeast Blend WLP080</option><option value="26">Cry Havoc WLP862</option><option value="27">Czech Budejovice Lager Yeast WLP802</option><option value="28">Dry English Ale Yeast WLP007</option><option value="29">Dusseldorf Alt Yeast WLP036</option><option value="30">East Coast Ale Yeast WLP008</option><option value="47">East Midlands Ale Yeast WLP039</option><option value="31">Edinburgh Scottish Ale Yeast WLP028</option><option value="32">English Ale Blend WLP085</option><option value="33">English Ale Yeast WLP002</option><option value="34">English Cider Yeast WLP775</option><option value="35">Essex Ale Yeast WLP022</option><option value="36">European Ale Yeast WLP011</option><option value="176">Flemish Ale Blend WLP665</option><option value="37">French Ale WLP072</option><option value="38">German Ale II WLP003</option><option value="39">German Ale/ Kölsch Yeast WLP029</option><option value="40">German Bock Lager Yeast WLP833</option><option value="41">German Lager Yeast WLP830</option><option value="156">German Lager X Yeast WLP835</option><option value="42">Hefeweizen Ale Yeast WLP300</option><option value="43">Hefeweizen IV Ale Yeast&nbsp;WLP380</option><option value="159">HP Lager Yeast WLP925</option><option value="44">Irish Ale Yeast WLP004</option><option value="154">Klassic Ale Yeast WLP033</option><option value="45">London Ale Yeast WLP013</option><option value="125">Manchester Ale Yeast WLP038</option><option value="46">Mexican Lager Yeast WLP940</option><option value="158">Munich Helles Yeast WLP860</option><option value="167">Neutral Grain Yeast WLP078</option><option value="48">Oktoberfest/Märzen Lager Yeast WLP820</option><option value="129">Old Bavarian Lager Yeast WLP920</option><option value="168">Old Sonoma Ale WLP076</option><option value="49">Pacific Ale Yeast WLP041</option><option value="50">Pilsner Lager Yeast WLP800</option><option value="153">Premium Bitter Ale Yeast WLP026</option><option value="126">San Diego Super Yeast WLP090</option><option value="51">San Francisco Lager Yeast WLP810</option><option value="169">Scotch Whiskey WLP045</option><option value="52">Southern German Lager Yeast WLP838</option><option value="152">Southwold Ale Yeast WLP025</option><option value="53">Super High Gravity Ale Yeast WLP099</option><option value="54">Sweet Mead/Wine Yeast WLP720</option><option value="170">Tennessee Whiskey WLP050</option><option value="55">Trappist Ale Yeast WLP500</option><option value="151">Whitbread Ale Yeast WLP017</option><option value="124">Yorkshire Square Ale Yeast WLP037</option><option value="56">Zurich Lager Yeast WLP885</option></optgroup><optgroup label="Wyeast"><option value="57">American Ale 1056</option><option value="58">American Ale II 1272</option><option value="59">American Lager 2035</option><option value="60">American Wheat 1010</option><option value="61">Bavarian Lager 2206</option><option value="62">Bavarian Wheat 3056</option><option value="63">Bavarian Wheat 3638</option><option value="64">Belgian Abby Ale II 1762</option><option value="65">Belgian Ale 1214</option><option value="66">Belgian Ardennes 3522</option><option value="177">Belgian Dark Ale 3822</option><option value="67">Belgian Lambic Blend 3278</option><option value="68">Belgian Saison 3724</option><option value="147">Belgian Schelde 3655</option><option value="178">Belgian Stout 1581</option><option value="69">Belgian Strong Ale 1388</option><option value="70">Belgian Wheat 3942</option><option value="71">Belgian Witbier 3944</option><option value="186">Berliner Weisse Blend 3191</option><option value="137">Bier de Garde 3725</option><option value="72">Bohemian Lager 2124</option><option value="73">Brettanomyces bruxellensis 5112</option><option value="74">Brettanomyces lambicus 5526</option><option value="75">British Ale 1098</option><option value="76">British Ale 1335</option><option value="179">British Cask Ale 1026</option><option value="77">Budvar Lager 2000</option><option value="78">California Lager 2112</option><option value="180">Canadian/Belgian Ale 3864</option><option value="79">Cider 4766</option><option value="80">Czech Pils 2278</option><option value="81">Danish Lager 2042</option><option value="132">Denny's Favorite 50 1450</option><option value="82">Dry Mead 4632</option><option value="143">English Special Bitter 1768</option><option value="83">European Ale 1338</option><option value="182">European Lager 2247</option><option value="136">Farmhouse Ale 3726</option><option value="142">Flanders Golden Ale 3739</option><option value="84">Forbidden Fruit 3463</option><option value="133">French Saison 3711</option><option value="85">German Ale 1007</option><option value="86">German Wheat 3333</option><option value="138">Hella Bock 2487</option><option value="87">Irish Ale 1084</option><option value="88">Kölsch 2565</option><option value="181">Kölsch II 2575</option><option value="89">Lactobacillus 5335</option><option value="145">Leuven Pale Ale 3538</option><option value="90">London Ale 1028</option><option value="91">London Ale III 1318</option><option value="92">London ESB Ale 1968</option><option value="93">Munich Lager 2308</option><option value="183">Munich Lager II 2352</option><option value="135">NB NeoBritannia 1945</option><option value="141">North American Lager 2272</option><option value="94">Northwest Ale 1332</option><option value="95">Octoberfest Lager Blend 2633</option><option value="96">Pediococcus 5733</option><option value="97">Pilsen Lager 2007</option><option value="326">Private Collection West Coast IPA 1217</option><option value="184">Rasenmäher Lager 2252</option><option value="98">Ringwood Ale 1187</option><option value="185">Rocky Mountain Lager 2105</option><option value="134">Roeselare Ale Blend 3763</option><option value="146">Rogue Pacman 1764</option><option value="99">Scottish Ale 1728</option><option value="144">Staro Prague Lager 2782</option><option value="100">Sweet Mead 4184</option><option value="101">Thames Valley Ale 1275</option><option value="140">Thames Valley II 1882</option><option value="139">Trappist Blend 3789</option><option value="102">Trappist High Gravity 3787</option><option value="103">Urquell Lager 2001</option><option value="104">Weihenstephan Weizen 3068</option><option value="148">West Yorkshire 1469</option><option value="105">Whitbread Ale 1099</option></optgroup><optgroup label="Danstar"><option value="149">American West Coast Yeast BRY-97</option><option value="150">Belle Saison Yeast</option><option value="163">Cask and Bottle Conditioning CBC-1</option><option value="116">Diamond Lager</option><option value="117">Munich Dry Wheat Yeast</option><option value="118">Nottingham Ale Yeast</option><option value="119">Windsor Ale Yeast</option></optgroup><optgroup label="GigaYeast"><option value="252">Achouffe Belgian Ale yeast</option><option value="253">Altstadt Ale</option><option value="254">American Lager Yeast</option><option value="255">Bavarian Hefe Yeast</option><option value="256">Belgian Mix</option><option value="257">Belgian Wit Yeast</option><option value="258">Berliner Blend</option><option value="259">British Ale #3</option><option value="260">British Ale Yeast #1</option><option value="261">British Ale Yeast #2</option><option value="262">Czech Pilsner Yeast</option><option value="263">Farmhouse Sour</option><option value="264">Fast Souring Lacto</option><option value="265">German Lager Yeast</option><option value="266">Golden Gate Lager Yeast</option><option value="267">Golden Pear Belgian Ale Yeast</option><option value="268">Kölsch Bier Yeast</option><option value="269">NorCal Ale #1</option><option value="270">NorCal Ale #5</option><option value="271">Portland Hefe Yeast</option><option value="272">Saison Blend</option><option value="273">Saison Sour</option><option value="274">Saison Yeast #1</option><option value="275">Saison Yeast #2</option><option value="276">Scotch Ale #1</option><option value="277">Scourmont Abbey Ale Yeast</option><option value="278">Sour Plum Belgian</option><option value="279">Sweet Flemish Brett</option><option value="280">Trappist Tripel Yeast</option><option value="281">Vermont IPA Yeast</option></optgroup><optgroup label="East Coast Yeast"><option value="187">Baltic Lager ECY22</option><option value="188">Belgian Abbaye ECY09</option><option value="189">Belgian White ECY11</option><option value="190">Berliner Blend ECY06</option><option value="191">Brett Blend #1 Anomala ECY04</option><option value="192">Brett Blend #9 ECY05</option><option value="193">Brett Custersianus ECY19</option><option value="194">Brett Nanus ECY24</option><option value="195">British Mild ECY18</option><option value="196">BugCounty ECY20</option><option value="197">BugFarm ECY01</option><option value="198">Burton Union ECY17</option><option value="199">Farmhouse Brett ECY03</option><option value="200">Flemish Ale ECY02</option><option value="201">Kölschbier ECY21</option><option value="202">Munich Festbier ECY15</option><option value="203">Northeast Ale ECY29</option><option value="204">Old Newark Ale ECY10</option><option value="205">Old Newark Beer ECY12</option><option value="206">Oud Brune ECY23</option><option value="207">Saison Brasserie ECY08</option><option value="208">Saison Single ECY14</option><option value="209">Scottish Heavy ECY07</option><option value="210">Trappist Ale ECY13</option></optgroup><optgroup label="Fermentis / Safale"><option value="107">Safale - American Ale Yeast US-05</option><option value="106">Safale - American Ale Yeast US-56</option><option value="108">Safale - English Ale Yeast S-04</option><option value="109">Safale - German Ale Yeast K-97</option><option value="110">Safbrew - General/Belgian Yeast S-33</option><option value="111">Safbrew - Specialty Ale Yeast T-58</option><option value="112">Safbrew - Wheat Beer Yeast WB-06</option><option value="114">Saflager - German Lager Yeast S-23</option><option value="113">Saflager - German Lager Yeast W-34/70</option><option value="115">Saflager - Swiss Lager Yeast S-189</option><option value="250">Safbrew - Abbaye Yeast</option></optgroup><optgroup label="Inland Island Yeast"><option value="331">American Ale Yeast INIS-007</option><option value="332">Belgian Gnome Ale INIS-222</option><option value="337">Brett Barrel Yeast III INIS-913</option><option value="329">Colorado IPA Yeast INIS-003</option><option value="330">Eccentric Ale Yeast INIS-006</option><option value="334">English Ale V INIS-315</option><option value="335">English Dry Ale INIS-318</option><option value="336">German Monk Lager INIS-711</option><option value="328">Northern California Ale Yeast INIS-001</option><option value="333">Saison : Farmhouse INIS-291</option></optgroup><optgroup label="Mangrove Jack"><option value="338">Bavarian Lager M76</option><option value="211">Bavarian Wheat Yeast M20</option><option value="339">Belgian Abbey M47</option><option value="212">Belgian Ale Yeast M41</option><option value="340">Belgian Tripel M31</option><option value="341">Belgian Wit M21</option><option value="213">Bohemian Lager Yeast M84</option><option value="214">British Ale Yeast M07</option><option value="215">Burton Union Yeast M79</option><option value="342">Californian Lager M54</option><option value="232">Craft Series Cider Yeast</option><option value="343">Empire Ale M15</option><option value="344">French Saison Ale M29</option><option value="345">Liberty Bell Ale M36</option><option value="347">Mead M05</option><option value="346">New World Strong Ale M42</option><option value="216">Newcastle Dark Ale Yeast M03</option><option value="233">UK Dark Ale Yeast</option><option value="217">US West Coast Yeast M44</option><option value="218">Workhorse Beer Yeast M10</option></optgroup><optgroup label="Real Brewers"><option value="219">Lucky No. 7</option><option value="220">The Monk</option><option value="221">The One</option><option value="222">Ye Olde English</option></optgroup><optgroup label="Siebel Institute"><option value="223">Alt Ale BRY 144</option><option value="224">American Ale BRY 96</option><option value="225">American Lager BRY 118</option><option value="226">Bavarian Weizen Ale BRY 235</option><option value="227">English Ale BRY 264</option><option value="228">German Kölsch BRY 401</option><option value="229">North European Lager BRY 203</option><option value="230">Trappist Ale BRY 204</option></optgroup><optgroup label="The Yeast Bay"><option value="237">Amalgamation - Brett Super Blend</option><option value="234">Beersel Brettanomyces Blend</option><option value="235">Brussels Brettanomyces Blend</option><option value="246">Dry Belgian Ale</option><option value="241">Farmhouse Sour Ale</option><option value="248">Franconian Dark Lager</option><option value="239">Funktown Pale Ale</option><option value="249">Hessian Pils</option><option value="236">Lochristi Brettanomyces Blend</option><option value="240">Mélange - Sour Blend</option><option value="247">Northeastern Abbey</option><option value="245">Saison Blend</option><option value="238">Saison/Brettanomyces Blend</option><option value="243">Vermont Ale</option><option value="244">Wallonian Farmhouse</option><option value="242">WLP672 - Lactobacillus Brevis</option></optgroup><optgroup label="Others"><option value="160">Brewferm Blanche</option><option value="161">Brewferm Lager</option><option value="162">Brewferm Top</option><option value="120">Coopers Ale</option><option value="121">Doric Ale</option><option value="122">Edme Ale</option><option value="231">Gervin Ale (by Muntons) GV-12</option><option value="123">Munton and Fison</option><option value="164">Muntons Premium Gold</option></optgroup><optgroup label="Imperial Yeast"><option value="284">A01 House</option><option value="286">A04 Barbarian</option><option value="288">A05 Four Square</option><option value="282">A07 Flagship</option><option value="283">A09 Pub</option><option value="285">A10 Darkness</option><option value="290">A13 Sovereign</option><option value="287">A15 Independence</option><option value="289">A18 Joystick</option><option value="291">A20 Citrus</option><option value="302">B44 Whiteout</option><option value="297">B45 Gnome</option><option value="295">B48 Triple Double</option><option value="298">B51 Workhorse</option><option value="301">B53 Fish Finder</option><option value="299">B56 Rustic</option><option value="300">B63 Monastic</option><option value="296">B64 Napoleon</option><option value="293">G01 Stefon</option><option value="292">G02 Kaiser</option><option value="294">G03 Dieter</option><option value="304">L02 Fest</option><option value="308">L05 Cablecar</option><option value="307">L09 Que Bueno</option><option value="305">L11 Gateway</option><option value="303">L13 Global</option><option value="306">L17 Harvest</option></optgroup><optgroup label="Omega Yeast Labs"><option value="313">West Coast Ale I</option><option value="319">Irish Ale</option><option value="317">British Ale I</option><option value="318">British Ale VIII</option><option value="312">Hefeweizen Ale</option><option value="315">Belgian Ale A</option><option value="316">Belgian Ale W</option><option value="311">DIPA Ale</option><option value="314">HotHead Ale</option><option value="320">German Lager I</option><option value="321">WHERE DA FUNK?</option><option value="322">BIT O’ FUNK</option><option value="323">BRING ON DA FUNK</option><option value="325">C2C American Farmhouse</option><option value="324">All The Bretts</option><option value="309">Saisonstein’s Monster</option><option value="310">LACTOBACILLUS BLEND</option></optgroup></select>
+	</div>
+
+	<div style="width:220px; float: left; padding-left: 8px;">
+			<div>
+				Fermentation Temp:
+				<input type="text" name="primary_temp" id="primary_temp" value="" maxlength="5" style="width: 50px">
+				<span class="unit" id="unit_primarytemp">F</span>
+			</div>
+			<div>
+				Pitch Rate: <i>(million cells / ml / ° P)</i>
+				<select name="pitchrate" id="pitchrate" onchange="javascript: updateAll();" style="margin-left: -1px;">
+					<option value="">--</option>
+					<option value="0.35">MFG Recommended 0.35 (Ale)</option>
+					<option value="0.5">MFG Recommended+ 0.5 (Ale)</option>
+					<option value="0.75">Pro Brewer 0.75 (Ale)</option>
+					<option value="1.0">Pro Brewer 1.0 (Big Ale)</option>
+					<option value="1.25">Pro Brewer 1.25 (Big Ale)</option>
+					<option value="1.5">Pro Brewer 1.5 (Lager)</option>
+					<option value="1.75">Pro Brewer 1.75 (Lager)</option>
+					<option value="2.0">Pro Brewer 2.0 (Big Lager)</option>
+				</select>
+				<a id="yeast_calc_link" href="http://www.brewersfriend.com/yeast-pitch-rate-and-starter-calculator/?og=NaN&amp;units=us&amp;batchsize=5.50&amp;sugarscale=sg&amp;pitchrate=&amp;yeasttype=dry" target="_blank" style="margin-bottom: 20px; text-decoration: underline; display: block;">Yeast Pitch Rate and Starter Calculator</a>
+				<span style="display: none;" id="yeast_calc_link_url">http://www.brewersfriend.com/yeast-pitch-rate-and-starter-calculator/</span>
+			</div>
+
+			<div>
+				<label style="cursor: pointer;"><input type="checkbox" name="yeast_starter" id="yeast_starter" value="true">
+				Starter</label>
+			</div>
+			<div>
+				<label style="cursor: pointer;"><input type="checkbox" name="chk_yeast_custom_attenuation" id="chk_yeast_custom_attenuation" value="true" onchange="toggleCustomAttenuation(this);">
+				Custom Attenuation</label>				
+			</div>
+			<div>
+				<span id="span_yeast_attenuation" style="margin-left: 10px; margin-top: 5px; display: none;">
+					<span class="pad">Attenuation:</span><input type="text" name="yeast_custom_attenuation" id="yeast_custom_attenuation" value="" maxlength="4" style="width: 40px" onchange="javascript: updateAll();">%
+				</span>
+			</div>
+			<div>
+				<label style="cursor: pointer;"><input type="checkbox" name="yeast_custom" id="yeast_custom" value="true" onchange="toggleCustomYeast(this);">
+				Custom / 2nd Yeast:</label>
+			</div>
+			<div id="customyeast" style="margin-left: 10px; margin-top: 5px; display: none;">
+				<span class="pad">Yeast:</span><input type="text" name="yeast_custom_name" id="yeast_custom_name" value="" maxlength="250" style="width: 160px">
+			</div>
+	</div>
+	
+		
+		
+	<div id="yeast_stats_box" style="float: right;" class="XM">
+		<table class="yeast_stats">
+			<tbody><tr>
+				<td>Optimum Temp:</td>
+				<td>
+					<span id="yeast_stats_temp_min">66</span> - <span id="yeast_stats_temp_max">72</span> <span class="unit" style="margin-right: 10px;" id="unit_yeasttemp">F</span>
+				 </td>
+			</tr>	 
+			<tr>
+				<td>Flocculation:</td>
+				<td>
+					<span id="yeast_stats_flocculation">Med</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Avg Attenuation:</td> 
+				<td>
+					<span id="yeast_stats_attenuation">75</span>%
+				</td>
+			</tr>
+			<tr>
+				<td>Alcohol Tolerance:</td>
+				<td>
+					<span id="yeast_stats_alcohol_tolerance">Med</span>
+				</td>
+			</tr>
+			<tr id="row_cells_required" style="display: none;">
+				<td>Cells Required:</td>
+				<td>
+					<span id="yeast_stats_cells_required"></span>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div style="float: right; margin-top: 25px;">
+			<span onclick="javascript: toggleYeastSort();" class="linkbutton" id="btn_sortYeastList">Sort Yeast List By ID</span>
+			<br><br>
+			<a href="http://www.brewersfriend.com/faq/#recipes24" target="_blank" class="helpButton small" style="float: right; margin-top: 5px; margin-right: 3px;">?</a>
+	</div>
+	<div style="clear: both;"></div>
+
+</div>
+
+<div style="clear: both;"></div>
+	
+				</div>
+			
+				<div class="recipeEditorDataBoxRight">
+					<div class="toolheading">Hops</div> 
+<div class="databox">
+	<div id="hops_brewpartitems" class="items">
+	
+	<div id="hops0" class="dataitem">
+				<span class="KXS" style="float: left; padding-top: 4px; padding-right: 2px;">
+					Amount:
+				</span>
+				<span class="XS" style="display: inline-block; width: 94px; float: left;">
+					<input type="text" name="hopsAmount[]" id="hopsAmount0" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					<div class="unitSelectContainer">
+						<select id="hops_units0" name="hops_units[]" onchange="switchAmountUnit(this, &#39;hops&#39;);">
+							<option>oz</option>
+							<option>g</option>
+						</select>
+					</div>
+				</span>
+				<span class="XXS" style="float: left; padding-top: 4px; width: 32px;">Hop:</span>
+				<span style="float: left;">
+					<input type="text" name="hopsVariety[]" class="hopsVariety ui-autocomplete-input" id="hopsVariety0" value="" maxlength="255" style="width: 140px;" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+					AA: <input type="text" name="hopsAA[]" id="hopsAA0" value="" maxlength="5" style="width: 39px">
+				</span>
+				
+				<span onclick="javascript: doRemoveHops(0);" class="linkbutton delete">X</span>
+				
+				<span class="moreitems" style="width: 445px;">
+					<span class="KXS" style="float: left; padding-top: 6px; display: inline-block; width: 50px;">Time: </span>
+					<span class="XS" style="display: inline-block; width: 94px;">
+						<input type="text" name="hopsTime[]" id="hopsTime0" value="" maxlength="3" style="width: 50px">
+						<input type="hidden" name="hopsTimeValue[]" id="hopsTimeValue0" value="NaN">
+						
+						<span class="unit" id="hopsTimeUnitLabel0" style="padding-left: 2px;">min.</span>
+					</span>
+					<span class="XXS" style="display: inline-block; width: 32px;">Type:</span>
+					<span>
+						<select name="hopsType[]" id="hopsType0">
+							<option selected="">--</option>
+							<option>Leaf/Whole</option>
+							<option>Pellet</option>
+							<option>Plug</option>
+							<option>Fresh</option>
+						</select>
+					</span>
+
+					<span style="padding-left: 5px;">Use:</span>
+					<span>
+						<select name="hopsUse[]" id="hopsUse0">
+							<option>--</option>
+							<option>Boil</option>
+							<option>Dry Hop</option>
+							<option>Mash</option>
+							<option>First Wort</option>
+							<option>Aroma</option>
+							<option>Whirlpool</option>
+							<option>Hopback</option>
+						</select>
+					</span>
+				</span>
+
+				<span id="div_hopstand0" style="display: none;">
+					<span class="KXS" style="float: left; display: inline-block; width: 123px; padding-top: 5px; text-align: right;"> 
+					<i>Hop Stand</i>
+					<a href="http://www.brewersfriend.com/faq/#hopstands" target="_blank" class="helpButton small" style="float: right; margin-right: 30px; margin-left: 5px;">?</a>
+					</span>
+
+					<span class="KXS" style="float: left; display: inline-block; width: 132px;">
+					Utilization: 
+					<input type="text" name="hopUtilization[]" id="hopUtilization0" value="" maxlength="4" style="width: 40px;"> %
+					</span>
+
+					<span class="KXS" style="float: left; display: inline-block; width: 150px;">
+						Start Temp: 
+						<input type="text" name="hopStandTemp[]" id="hopStandTemp0" value="" maxlength="6" style="width: 40px;">
+						<span class="unit" style="margin-right: 10px;" id="unit_hopstandtemp_0">F</span>
+					</span>
+					<br>
+				</span>
+
+				<input type="hidden" name="hopsIBUValue[]" id="hopsIBUValue0" value="">
+				<span style="width: 138px;"></span>
+				<span class="ingData">IBUs:</span>
+				<span class="ingData" style="display: inline-block; width: 50px; text-align: left;" id="hopsInfoIBU0"></span>
+				<span class="ingData">Util:</span>
+				<span class="ingData" style="display: inline-block; width: 42px; text-align: left;" id="hopsInfoUtil0"></span>
+				<span class="ingData">AAUs:</span>
+				<span class="ingData" id="hopsInfoAAU0"></span>
+				
+			</div></div>
+	
+	<span onclick="javascript: addSection(&#39;hops&#39;);" class="linkbutton">Add</span> 
+	<span onclick="javascript: sortHops();" class="linkbutton">Sort Hops</span>
+	
+	<a href="http://www.brewersfriend.com/faq/#recipes21" target="_blank" class="helpButton small" style="float: right; margin-right: 10px;">?</a>
+		
+	<div style="display:none; visibility:hidden;">
+		<div id="hops_template">
+			<div id="hops" class="dataitem">
+				<span class="KXS" style="float: left; padding-top: 4px; padding-right: 2px;">
+					Amount:
+				</span>
+				<span class="XS" style="display: inline-block; width: 94px; float: left;">
+					<input type="text" name="hopsAmount[]" id="hopsAmount" value="" maxlength="6" style="width: 50px; float: left; margin-right: 3px;">
+					<div class="unitSelectContainer">
+						<select id="hops_units" name="hops_units[]" onchange="switchAmountUnit(this, &#39;hops&#39;);">
+							<option>oz</option>
+							<option>g</option>
+						</select>
+					</div>
+				</span>
+				<span class="XXS" style="float: left; padding-top: 4px; width: 32px;">Hop:</span>
+				<span style="float: left;">
+					<input type="text" name="hopsVariety[]" class="hopsVariety" id="hopsVariety" value="" maxlength="255" style="width: 140px;">
+					AA: <input type="text" name="hopsAA[]" id="hopsAA" value="" maxlength="5" style="width: 39px">
+				</span>
+				
+				<span onclick="javascript: doRemoveHops();" class="linkbutton delete">X</span>
+				
+				<span class="moreitems" style="width: 445px;">
+					<span class="KXS" style="float: left; padding-top: 6px; display: inline-block; width: 50px;">Time: </span>
+					<span class="XS" style="display: inline-block; width: 94px;">
+						<input type="text" name="hopsTime[]" id="hopsTime" value="" maxlength="3" style="width: 50px">
+						<input type="hidden" name="hopsTimeValue[]" id="hopsTimeValue" value="">
+						
+						<span class="unit" id="hopsTimeUnitLabel" style="padding-left: 2px;">min.</span>
+					</span>
+					<span class="XXS" style="display: inline-block; width: 32px;">Type:</span>
+					<span>
+						<select name="hopsType[]" id="hopsType">
+							<option selected="">--</option>
+							<option>Leaf/Whole</option>
+							<option>Pellet</option>
+							<option>Plug</option>
+							<option>Fresh</option>
+						</select>
+					</span>
+
+					<span style="padding-left: 5px;">Use:</span>
+					<span>
+						<select name="hopsUse[]" id="hopsUse">
+							<option>--</option>
+							<option>Boil</option>
+							<option>Dry Hop</option>
+							<option>Mash</option>
+							<option>First Wort</option>
+							<option>Aroma</option>
+							<option>Whirlpool</option>
+							<option>Hopback</option>
+						</select>
+					</span>
+				</span>
+
+				<span id="div_hopstand" style="display: none;">
+					<span class="KXS" style="float: left; display: inline-block; width: 123px; padding-top: 5px; text-align: right;"> 
+					<i>Hop Stand</i>
+					<a href="http://www.brewersfriend.com/faq/#hopstands" target="_blank" class="helpButton small" style="float: right; margin-right: 30px; margin-left: 5px;">?</a>
+					</span>
+
+					<span class="KXS" style="float: left; display: inline-block; width: 132px;">
+					Utilization: 
+					<input type="text" name="hopUtilization[]" id="hopUtilization" value="" maxlength="4" style="width: 40px;"> %
+					</span>
+
+					<span class="KXS" style="float: left; display: inline-block; width: 150px;">
+						Start Temp: 
+						<input type="text" name="hopStandTemp[]" id="hopStandTemp" value="" maxlength="6" style="width: 40px;">
+						<span class="unit" style="margin-right: 10px;" id="unit_hopstandtemp_">F</span>
+					</span>
+					<br>
+				</span>
+
+				<input type="hidden" name="hopsIBUValue[]" id="hopsIBUValue" value="">
+				<span style="width: 138px;"></span>
+				<span class="ingData">IBUs:</span>
+				<span class="ingData" style="display: inline-block; width: 50px; text-align: left;" id="hopsInfoIBU"></span>
+				<span class="ingData">Util:</span>
+				<span class="ingData" style="display: inline-block; width: 42px; text-align: left;" id="hopsInfoUtil"></span>
+				<span class="ingData">AAUs:</span>
+				<span class="ingData" id="hopsInfoAAU"></span>
+				
+			</div>
+		</div>
+	</div>
+</div>					
+					<div class="toolheading">Other Ingredients</div>
+<div class="databox" style="padding-bottom: 0px;">
+	<div id="other_brewpartitems" class="items">
+
+	<div id="other0" class="dataitem">
+				<span class="KXS">
+					Name:
+				</span>
+				<span class="M">
+					<input type="text" name="otherName[]" id="otherName0" value="" maxlength="255" style="width: 165px">
+				</span>
+
+				<span class="KXS">Amount:</span>
+				<input type="text" name="otherAmount[]" id="otherAmount0" value="" maxlength="6" style="width: 55px">
+				<select name="otherUnit[]" id="otherUnit0"><option value="oz">oz</option><option value="lb">lb</option><option value="qt">qt</option><option value="tsp">tsp</option><option value="tbsp">tbsp</option><option value="each">each</option><option value="g">g</option><option value="ml">ml</option></select>
+
+				<span class="KXS">Time: </span>
+				<input type="text" name="otherTime[]" id="otherTime0" value="" maxlength="3" style="width: 50px">
+
+                <div class="unitSelectContainer" style="float:none;display:inline;margin-right:10px;">
+                    <select id="otherTime_units0" name="otherTime_units[]" onchange="switchTimeUnit(this, &#39;other&#39;);" style="width:40px;">
+                        <option value="min.">min.</option>
+                        <option value="hr.">hr.</option>
+                        <option value="days">days</option>
+                    </select>
+                </div>
+					
+
+
+				<span class="XXS">Type:</span>
+				<span>
+					<select name="otherType[]" id="otherType0" style="width: 75px">
+						<option>--</option>
+						<option>Spice</option>
+						<option>Fining</option>
+						<option>Flavor</option>
+						<option>Herb</option>
+						<option>Other</option>
+						<option>Water Agt</option>
+					</select>
+				</span>
+				<span class="XXS" style="text-align: right; display: inline-block; width: 41px;"> Use: </span>
+				<select name="otherUse[]" id="otherUse0" style="width: 98px">
+					<option>--</option>
+					<option>Boil</option>
+					<option>Mash</option>
+					<option>Primary</option>
+					<option>Secondary</option>
+					<option>Bottling</option>
+					<option>Kegging</option>
+					<option>Other</option>
+				</select>
+
+				<span onclick="javascript: doRemoveOther(0);" class="linkbutton delete">X</span>
+
+			</div></div>
+	<div class="buttons">
+		<span onclick="javascript: addSection(&#39;other&#39;);" class="linkbutton">Add</span>
+		<span onclick="javascript: sortOthers();" class="linkbutton">Sort Others</span>
+
+		<a href="http://www.brewersfriend.com/faq/#recipes23" class="helpButton small" target="_blank" style="float: right; margin-right: 10px;">?</a>
+	</div>
+
+
+	<div style="display:none; visibility:hidden;">
+		<div id="other_template">
+			<div id="other" class="dataitem">
+				<span class="KXS">
+					Name:
+				</span>
+				<span class="M">
+					<input type="text" name="otherName[]" id="otherName" value="" maxlength="255" style="width: 165px">
+				</span>
+
+				<span class="KXS">Amount:</span>
+				<input type="text" name="otherAmount[]" id="otherAmount" value="" maxlength="6" style="width: 55px">
+				<select name="otherUnit[]" id="otherUnit"></select>
+
+				<span class="KXS">Time: </span>
+				<input type="text" name="otherTime[]" id="otherTime" value="" maxlength="3" style="width: 50px">
+
+                <div class="unitSelectContainer" style="float:none;display:inline;margin-right:10px;">
+                    <select id="otherTime_units" name="otherTime_units[]" onchange="switchTimeUnit(this, &#39;other&#39;);" style="width:40px;">
+                        <option value="min.">min.</option>
+                        <option value="hr.">hr.</option>
+                        <option value="days">days</option>
+                    </select>
+                </div>
+					
+
+
+				<span class="XXS">Type:</span>
+				<span>
+					<select name="otherType[]" id="otherType" style="width: 75px">
+						<option>--</option>
+						<option>Spice</option>
+						<option>Fining</option>
+						<option>Flavor</option>
+						<option>Herb</option>
+						<option>Other</option>
+						<option>Water Agt</option>
+					</select>
+				</span>
+				<span class="XXS" style="text-align: right; display: inline-block; width: 41px;"> Use: </span>
+				<select name="otherUse[]" id="otherUse" style="width: 98px">
+					<option>--</option>
+					<option>Boil</option>
+					<option>Mash</option>
+					<option>Primary</option>
+					<option>Secondary</option>
+					<option>Bottling</option>
+					<option>Kegging</option>
+					<option>Other</option>
+				</select>
+
+				<span onclick="javascript: doRemoveOther();" class="linkbutton delete">X</span>
+
+			</div>
+		</div>
+	</div>
+
+	<div style="padding-left: 8px; padding-top: 10px;">
+		<span class="primingmethod">
+			Priming Method:<br>
+			<input type="text" name="primingName" id="primingName" value="" maxlength="255" style="width: 130px;">
+		</span>
+		<span class="primingmethod">
+			Amount:<br>
+			<input type="text" name="primingAmount" id="primingAmount" value="" maxlength="100" style="width: 130px;">
+		</span>
+		<span class="primingmethod">
+			CO<sub>2</sub> Level:<br>
+			<input type="text" name="co2level" id="co2level" value="" maxlength="8" style="width: 80px; float: left;">
+			<div class="unitSelectContainerLarge">
+				<select id="co2unit" name="co2unit">
+					<option value="Volumes">vols</option>
+					<option value="g/l">g/l</option>
+				</select>
+			</div>
+		</span>
+	</div>
+	<div class="clear"></div>
+</div>
+					
+					<div id="waterchemistry">
+<div class="toolheading">Water Chemistry</div> 
+<div class="databox padded">
+	
+	<div style="margin-bottom: 10px;">
+	Target Water Profile: 
+	
+	<select name="waterprofile" id="waterprofile" onchange="waterProfileUpdate();">
+	<option value="--- Water Profile ---">--- Water Profile ---</option><option value="Balanced Profile">Balanced Profile</option><option value="Balanced Profile II">Balanced Profile II</option><option value="Light colored and malty">Light colored and malty</option><option value="Light colored and hoppy">Light colored and hoppy</option><option value="Burton on Trent (historic)">Burton on Trent (historic)</option><option value="Burton on Trent (historic and decarbonated)">Burton on Trent (historic and decarbonated)</option><option value="Dortmund (historic)">Dortmund (historic)</option><option value="Dortmund (historic and decarbonated)">Dortmund (historic and decarbonated)</option><option value="Dublin (Dry Stout)">Dublin (Dry Stout)</option><option value="Edinburgh (Scottish Ale, Malty Ale)">Edinburgh (Scottish Ale, Malty Ale)</option><option value="London (Porter, dark ales)">London (Porter, dark ales)</option><option value="Munich (Dark Lager)">Munich (Dark Lager)</option><option value="Munich (decarbonated)">Munich (decarbonated)</option><option value="Pilsen (Light Lager)">Pilsen (Light Lager)</option><option value="Düsseldorf (Altbier)">Düsseldorf (Altbier)</option><option value="Custom">Custom</option></select>
+	<br>
+	
+	<span id="span_waterprofile_custom" style="margin-left: 10px; margin-top: 5px; display: none; visibility: hidden;">
+		<span class="pad">Name:</span><input type="text" name="waterprofile_custom" id="waterprofile_custom" style="width: 325px;" maxlength="255" value="">
+	</span>
+	
+	</div>
+	
+	<div style="margin-bottom: 0px;">
+	Target Ion Levels (ppm or mg/L):<br>
+		<table>
+		<tbody><tr>
+			<td>Ca<sup>+2</sup></td>
+			<td>Mg<sup>+2</sup></td>
+			<td>Na<sup>+</sup></td>
+			<td>Cl<sup>-</sup></td>
+			<td>SO<sub>4</sub><sup>-2</sup></td>
+			<td>HCO<sub>3</sub><sup>-</sup></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="water_ca" id="water_ca" value="0" maxlength="5" style="width: 40px"></td>
+			<td><input type="text" name="water_mg" id="water_mg" value="0" maxlength="5" style="width: 40px"></td>
+			<td><input type="text" name="water_na" id="water_na" value="0" maxlength="5" style="width: 40px"></td>
+			<td><input type="text" name="water_cl" id="water_cl" value="0" maxlength="5" style="width: 40px"></td>
+			<td><input type="text" name="water_so" id="water_so" value="0" maxlength="5" style="width: 40px"></td>
+			<td><input type="text" name="water_hco" id="water_hco" value="0" maxlength="5" style="width: 40px"></td>
+		</tr>
+		</tbody></table>
+	</div>
+	
+	<span id="water_calc_link_not_saved_yet" class="waterCalcLink" style="margin-bottom: 10px; font-style: italic; display: none; color: rgb(119, 119, 119);">Save Recipe for Link to Mash Chemistry Calculator</span>
+	<a id="water_calc_link" href="http://www.brewersfriend.com/homebrew/recipe/calculator" target="_blank" class="waterCalcLink" style="display: none; margin-bottom: 10px; text-decoration: underline;">Mash Chemistry and Brewing Water Calculator</a>
+	<span style="display: none;" id="water_calc_link_url">http://www.brewersfriend.com/mash-chemistry-and-brewing-water-calculator/</span>
+
+	Water Notes:<br>
+	<textarea name="waternotes" id="waternotes" wrap="virtual" style="width: 435px; height: 125px;"></textarea>
+	<br>
+	<i>Describe the target water and any special treatments.</i>
+	
+	<a href="http://www.brewersfriend.com/faq/#recipes25" class="helpButton small" target="_blank" style="float: right; margin-right: 10px;">?</a>
+</div>
+</div>
+									</div>
+				
+				<div class="recipeEditorDataBoxLeft">
+					<div class="toolheading">Description / Notes</div> 
+					<div class="databox padded">
+						<textarea name="notes" id="notes" wrap="virtual" style="width: 98%; height: 250px"></textarea>
+						<br>
+						<div style="padding-top: 0px; margin-left: 5px; margin-bottom: 10px;">						
+						<i>Provide a description of the beer and notes about the recipe such as other ingredients,
+							fermentation duration and temperature, and any special methods used.
+						</i>
+						</div>
+						
+						<div style="padding-top: 3px; margin-left: 5px; margin-bottom: 13px;">		
+						<label style="cursor: pointer;">
+							<input type="checkbox" id="awardwinning" name="awardwinning" value="true">
+							<b>Award Winning</b>
+							<i>Explain in the notes and provide evidence.</i>
+						</label>
+						</div>
+
+							
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</form></div>
+	<div class="clear"></div>
+	
+	
+	<a href="http://www.brewersfriend.com/homebrew/recipe/calculator#top" class="insetbutton">Back To Top</a>
+	<a class="insetbutton bf-publicationText-buy_recipe_now buy-recipe-now-button" target="_blank" href="http://www.brewersfriend.com/homebrew/recipe/calculator#">Buy This Recipe</a>
+	
+			<!-- /1004971/Cultured_300x250_Side_Middle_Priority -->
+		<div id="div-gpt-ad-1453778999114-0" style="height:250px; width:300px;">
+			<script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1453778999114-0'); });</script>
+		</div>
+		
+	<div id="sharedialog" class="forminput" style="display:none;">
+	
+		<div style="padding: 5px; margin-top: 10px;">
+			<div>
+				<label class="leftheading" style="cursor: pointer;">Share recipe by URL: &nbsp;<input id="sharePublic" name="sharePublic" type="checkbox" value="true" onchange="upateSharingCheckboxes();"></label>
+			</div>
+			<i>Share the recipe by providing a link to others.</i>
+			<div>
+				<textarea style="display: none; width: 95%; height: 50px;" id="publicurl" name="publicurl" class="recipeurl" value="" readonly=""></textarea>
+			</div>
+
+			<div id="shareSearchableLabel" style="color: #aaa;">
+				<label class="leftheading" style="cursor: pointer;">Add to recipe database and my shared recipes: &nbsp;<input id="shareSearchable" name="shareSearchable" type="checkbox" value="true" disabled=""></label>
+				<br>
+				<i>When checked the recipe will appear in the searchable database and in your profile under 'my shared recipes'.</i>
+			</div>
+			
+		</div>
+		
+	<div style="padding: 5px;" id="sharenotification"></div>
+	
+</div>	<div id="scaledialog" class="forminput" style="display:none;">
+			
+		<div class="databox" style="padding: 5px 5px 0px 5px; margin-top: 10px;">
+			<div style="padding: 5px 5px 0px 5px;">
+				<b>New Batch Size:</b> <input type="text" style="width: 100px;" id="newbatchsize" maxlength="6" class="recipeurl" value="" tabindex="-1">
+				Currently <span id="scale_current_batch_size"></span>
+				<span class="unit" id="unitbatchsize_scale">(gallons)</span>
+				<div style="pointer-events: none;">
+					<ul>
+						<li>All	amounts are adjusted (batch size, grains, hops, etc).</li>
+						<li>The Boil Size vs Batch Size difference will be maintained.
+							If you are scaling this recipe to different equipment then please check the Boil Size figure.</li>
+						<li>Rounding differences will cause minor variations in the stats after scaling. IBUs will differ the most because the relationship between boil volume and bittering units is not linear.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="databox" style="padding: 5px 5px 0px 5px; margin-top: 10px;" id="scale_by_efficiency_box">
+			<div>
+				<b>New Batch Efficiency:</b> <input type="text" style="width: 100px;" id="newefficiency" maxlength="4" class="recipeurl" value="" tabindex="-1">
+				Currently <span id="scale_current_efficiency"></span>%
+				<div style="pointer-events: none;">
+					<ul>
+						<li>Scaling by Efficiency will only impact mashable fermentables and custom fermentables.</li>
+						<li>To keep the OG exact, the base malt is then selected and fine tuned. This will result in small changes in color.</li>
+						<li>A small change to the amount of dark malts, holding water volume fixed, leads to large changes in SRM and flavor. 
+							Therefore, only malts with a Lovibond below 15 are adjusted by this scaling method.</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<i>Do not use this tool to scale up to production recipes without expert input!</i>
+	
+</div>	
+<div id="view_waterrequirement_dialog" class="forminput" style="display:none;">
+	
+	<div id="waterrequirement_loading" class="inactiveoverlay" style="width: 100%;">
+		<img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/loadhop_75px.gif">
+		<div>Calculating Water Requirements...</div>
+	</div>
+
+	<div id="waterrequirement_results"></div>
+
+</div>
+
+<script type="text/javascript">
+
+var recipeIdForDialog = -1;
+function showWaterRequirementDialog(recipeId) {
+
+	recipeIdForDialog = recipeId;
+
+	// android bleedthrough fix, needs to be before the dialog is declared
+	$('#view_waterrequirement_dialog').bind('dialogopen', function(event) {
+		disableAllFieldsBehindDialog(this);
+	});
+	// this is nice because it captures any and all routes for the dialog to be closed
+	$('#view_waterrequirement_dialog').bind('dialogclose', function(event) {
+		reEnableFieldsBehindDialog();
+	});
+
+
+	// default to full screen for small devices
+	var dialogWidth = $(window).width();
+	var dialogHeight = $(window).height();
+
+	if(dialogWidth > 500) { dialogWidth = 500; }
+	if(dialogHeight > 400) { dialogHeight = 400; }
+
+
+	$('#view_waterrequirement_dialog').dialog({
+		modal: true,
+		resizable: false,
+		draggable: false,
+		position: 'center',
+        width: dialogWidth,
+        height: dialogHeight,
+		zIndex: 9999,
+		title: ("Water Requirements &nbsp;<img src='//www.brewersfriend.com/homebrew/images/refresh_gray.png' border=0 style='cursor: pointer; vertical-align: bottom;' onclick='loadWaterRequirementDialog();' />"),
+		buttons: { 
+			"Close": function() { $(this).dialog("close"); }
+		}
+	});
+
+	loadWaterRequirementDialog();
+}
+
+function loadWaterRequirementDialog() {
+	$('#waterrequirement_loading').show();
+	$('#waterrequirement_results').hide();
+	$('#waterrequirement_results').html("");
+
+	// persist the change to the system
+	var ajaxRequest = $.ajax({
+		url: "/homebrew/quick/waterrequirements/" + recipeIdForDialog,
+		type: "GET",
+		cache: false,
+		timeout: 20000,
+		success:function(data) {
+			
+			$('#waterrequirement_loading').fadeOut();
+			$('#waterrequirement_results').html(data);
+			$('#waterrequirement_results').fadeIn();
+		
+		},
+		error:function(request, status, error) {
+			alert("There was an error loading the water requirements. Please make sure you are connected to the internet and try again.");
+			$('#waterrequirement_loading').hide();
+			$('#waterrequirement_results').html("Unable to get water requirements.");
+			$('#waterrequirement_results').fadeIn();
+		}
+	});
+}
+
+</script>
+
+	<script type="text/javascript" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/bfdata.js"></script>
+	<script type="text/javascript" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/bf.min.js"></script>
+
+<script type="text/javascript">
+
+	var defaultHopType = 'Leaf/Whole';
+	var defaultYeastSort = 'name';
+	var defaultMashUnit = 'qt';
+	var defaultBatchSize = '';
+	var defaultBoilSize = '';
+	var defaultMashThickness = '1.5';
+	
+	function updateDataArraysWithUserData() {
+		var mywaterprofile;
+		
+	}
+</script>
+
+
+
+</div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7808675055479453"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.23374392617702933" width="0" height="0" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/0"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.27908308227271594" width="0" height="0" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/0(1)"></div>
+
+<div id="footerpush"></div>
+<div id="footerbox">
+	<div id="footermenu">
+		<div id="footernamesoc">
+			<a id="footername" href="http://www.brewersfriend.com/"><img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/brewersfriendname72x171.png" alt="http://www.brewersfriend.com/"></a>
+		
+			<div id="footersoc">
+				<a href="http://www.twitter.com/brewers_friend" target="_blank"><img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/twitter.png" alt="Brewer&#39;s Friend&#39;s twitter"></a>
+				<a href="http://www.facebook.com/BrewersFriendSite" target="_blank"><img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/facebook.png" alt="Brewer&#39;s Friend&#39;s facebook page"></a>
+				<a href="http://plus.google.com/u/0/105532020046844070100/" target="_blank"><img src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/gplus.png" alt="Brewer&#39;s Friend&#39;s google plus"></a>
+			</div>
+		</div>
+		<ul>
+		
+			<li id="footerPages">
+				Pages
+				<ul>
+					<li><a href="http://www.brewersfriend.com/">Home</a></li>
+					<li><a href="http://www.brewersfriend.com/blog/">Blog</a></li>
+										<li><a href="http://www.brewersfriend.com/forum/">Forum</a></li>
+										<li><a href="http://www.brewersfriend.com/faq">FAQ</a></li>
+					
+					
+				</ul>
+			</li>
+
+			<li id="footerTools">
+				Tools
+				<ul>
+					
+					<li><a href="http://www.brewersfriend.com/homebrew/recipe/calculator/">Recipe Builder</a></li>
+					<li><a href="http://www.brewersfriend.com/brewdaysheets/">Brew Day Sheets</a></li>
+					<li><a href="http://www.brewersfriend.com/stats/">Brewing Calculators</a></li>
+					<li><a href="http://www.brewersfriend.com/homebrew/dashboard/">My Dashboard</a></li>
+					
+				</ul>
+			</li>
+			
+			<li id="footerMore">
+				Search
+				<ul>
+					<li><a href="http://www.brewersfriend.com/homebrew/search/">Site Search</a></li>
+					<li><a href="http://www.brewersfriend.com/search/">Beer Recipes</a></li>
+				</ul>
+			</li>
+			
+			<li id="footerLatest">
+				More
+				<ul>
+					<li><a href="http://www.brewersfriend.com/feedback-welcome/">Contact</a></li>
+					<li><a href="http://www.brewersfriend.com/about/">About</a></li>
+					<li><a href="http://www.brewersfriend.com/pricing/">Pricing / Features</a></li>
+					<li><a href="http://www.brewersfriend.com/homebrew/partnerprogram/">Partner Program</a></li>
+					<li><a href="http://www.brewersfriend.com/advertise/">Advertise</a></li>
+				</ul>
+			</li>
+
+			<li id="footerSponsor">
+				Sponsor
+				<ul>
+					<li><a href="http://www.homebrewsupply.com/"><img class="hbs-logo" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/hbs_logo.png" alt="Homebrew Supply"></a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="footer">
+		Copyright © 2007-2016 BrewersFriend.com - 
+		<a href="http://www.brewersfriend.com/feedback-welcome/">Send Feedback</a> - 
+		<a href="http://www.brewersfriend.com/terms">Terms</a> -
+		<a href="http://www.brewersfriend.com/feed/rss/">RSS Feed</a>
+		
+				
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	// swap to a different viewport if portrait and the width is below 400 (phones only)
+	if($(window).width() < $(window).height() && $(window).width() < 400) {
+		metaTag = document.querySelector('meta[name=viewport]');
+		if(metaTag) {
+			metaTag.setAttribute('content', 'width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1');
+			// set a cookie to remember this is a phone, expires in ~3 years
+			setCookie("bfphone", "1", (365 * 3));
+		}		
+	}
+	
+	if(navigator && navigator.userAgent.match(/iPhone/i) &&
+		!getCookie('closeiphone')) {
+		$('#iphoneBar').show();
+	}
+});
+</script>
+
+
+
+
+
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJGMPS"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJGMPS');</script>
+
+<script type="text/javascript">
+window.bi_recipeJson = "";
+window.bi_recipeToken = "";
+/**
+* Gets recipe JSON from current form content
+*/
+function buyRecipePostToHbs() {
+    var bi_form = $(
+            '<form action="http://www.homebrewsupply.com/homebrew-recipe-builder/save/bfBuy" method="POST" target="_blank">' +
+            '<input type="hidden" name="recipetoken" value="' + window.bi_recipeToken + '" />' + 
+            '<input type="hidden" name="bi_form_data" id="bi_form_data_' + window.buyingredients_post_index + '" value="" />' + 
+            '</form>'
+            ).appendTo('body');
+    $('#bi_form_data_' + window.buyingredients_post_index).val(window.bi_recipeJson);
+    bi_form.submit();
+}
+
+window.buyingredients_post_index = 0;
+$(document).ready(function() {
+    $(".buy-recipe-now-button").click(function(e) {
+        window.buyingredients_post_index++;
+
+        //get json for recipe if we're on the edit page
+        var recipeFormData = $("#calc").serialize();
+        if (recipeFormData != "") {
+            //first save the recipe
+            doPost(function(response) {
+
+                var recipeId = response.recipeId;
+
+                var ajaxRequest = $.ajax({
+                    url: "/homebrew/recipe/json/" + recipeId,
+                    type: "GET",
+                    timeout: 20000,
+                    success:function(data){
+                        var json = data;
+                        var parsed = $.parseJSON(data);
+                        window.buyingredients_post_index++;
+                        window.bi_recipeToken = parsed.recipetoken;
+                        window.bi_recipeJson = json;
+
+                        //re-enable everything
+                        enableButtonsAfterSave();		
+                        setTimeout( function(){
+                            saveButtonActive(true,{});
+                        }, 500);
+
+                        //saveButtonActive(true,{});
+                        buyRecipePostToHbs();
+                    },
+                    error:function(request, status, error){
+                        showPostError(request.responseText);
+                        notification("There was an error saving your recipe, please make sure you are connected to the internet and try again.", {color : 'red'} );
+                    }
+                });
+
+            });
+        }
+        else if (window.bi_recipeJson != "") {
+            buyRecipePostToHbs();
+        }
+        else {
+            //TODO: this shouldn't happen
+        }
+        
+        return false;
+    });
+});
+
+</script>
+
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages 
+related to sensitive categories. See more information and instructions on how to setup the tag on: 
+http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+	var google_tag_params = {
+		//ecomm_prodid: 'REPLACE_WITH_VALUE',
+		ecomm_pagetype: 'culture_brewersfriend' //,
+		//ecomm_totalvalue: 'REPLACE_WITH_VALUE',
+	};
+</script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+		var google_conversion_id = 954845969;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/conversion.js"></script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Beer Recipe Calculator - Brewer&#39;s Friend_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+<noscript>
+	&lt;div style="display:inline;"&gt;
+		&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/954845969/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+	&lt;/div&gt;
+</noscript>
+
+
+
+
+
+<script type="text/javascript" id="">(function(){var a=window._fbq||(window._fbq=[]);if(!a.loaded){var b=document.createElement("script");b.async=!0;b.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);a.loaded=!0}a.push(["addPixelId","700470510050009"])})();window._fbq=window._fbq||[];window._fbq.push(["track","PixelInitialized",{}]);</script>
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=700470510050009&amp;amp;ev=PixelInitialized"&gt;</noscript><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 90; top: 0px; left: 0px; display: none;"></ul></body></html>
