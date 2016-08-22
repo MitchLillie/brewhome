@@ -3,8 +3,8 @@ import Hop from './Hop'
 
 const HopList = React.createClass({
   render: function () {
-    let list = this.props.data.map(hop => {
-      return <Hop {...hop} key={hop.id} />
+    let list = this.props.hops.map((hop, i) => {
+      return <Hop {...hop} key={i + 1} />
     })
     return (
     <div className='hops-list'>
