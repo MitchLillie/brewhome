@@ -152,6 +152,20 @@ export default class HomePage extends Component {
     this.setState({ibu})
   }
 
+  calculateOg () {
+    let efficiency = 0.75
+    let og = 0
+    this.state.ingredients.fermentables.forEach(e => {
+      console.log("adding: ", e)
+      let point = (e.potential * 1000) - 1000
+      og += (e.lb * point)
+    })
+    og = og * efficiency
+    og = Math.round(og / gallons)
+    og = (og / 1000) + 1
+    this.setState({og})
+  }
+
   loadFromServer () {
     // TODO: sort data by time desc
     $.ajax({
@@ -170,6 +184,7 @@ export default class HomePage extends Component {
         let recipe = data.docs[0]
         this.setState(recipe)
         this.calculateIbu()
+        this.calculateOg()
       }.bind(this),
       error: function (xhr, status, err) {
         console.error(url, status, err.toString())
