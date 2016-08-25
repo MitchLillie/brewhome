@@ -64,6 +64,7 @@
         "flocculation": "high",
         "time": 0,
         "volume": "2L",
+        "cost": "",
         "temperature": {
           "low": 64.0,
           "high": 71.0,
