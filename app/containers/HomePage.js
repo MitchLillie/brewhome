@@ -118,17 +118,10 @@ export default class HomePage extends Component {
   addHops (hop) {
     // TODO: validate
     // send to server curl -H "Content-Type: application/json" -X POST -d '{"name": "galaxy", "aa": 13.0, "time": 60, "type": "pellet"}' https://brewhome.cloudant.com/hops
-    let {hops} = this.state.ingredients
-    hops.push(hop)
-    let payload = {
-      '_id': this.state._id,
-      '_rev': this.state._rev,
-      ingredients: {
-        hops: hops
-      }
-    }
+    let payload = {...this.state}
+    payload.ingredients.hops.push(hop)
     $.ajax({
-      url: url,
+      url: url + '/' + this.state._id,
       dataType: 'json',
       contentType: 'application/json',
       type: 'PUT',
@@ -142,20 +135,53 @@ export default class HomePage extends Component {
     })
   }
 
+  addMalt (malt) {
+    // TODO: validate
+    let payload = {...this.state}
+    payload.ingredients.fermentables.push(malt)
+    $.ajax({
+      url: url + '/' + this.state._id,
+      dataType: 'json',
+      contentType: 'application/json',
+      type: 'PUT',
+      data: JSON.stringify(payload),
+      success: function (data) {
+        this.loadFromServer()
+      }.bind(this),
+      error: function (xhr, status, err) {
+        console.error(url, status, err.toString())
+      }.bind(this)
+    })
+  }
+
+  addYeast (yeast) {
+    // TODO: validate
+    // let payload = {...this.state}
+    // payload.ingredients.yeast.push(malt)
+    // $.ajax({
+    //   url: url + '/' + this.state._id,
+    //   dataType: 'json',
+    //   contentType: 'application/json',
+    //   type: 'PUT',
+    //   data: JSON.stringify(payload),
+    //   success: function (data) {
+    //     this.loadFromServer()
+    //   }.bind(this),
+    //   error: function (xhr, status, err) {
+    //     console.error(url, status, err.toString())
+    //   }.bind(this)
+    // })
+  }
+
   calculateIbu () {
     // TODO: Toggle for leaf/pellets
-    let og = 1.050
     let ibu = 0
     // via http://www.rooftopbrew.net/ibu.php
     this.state.ingredients.hops.forEach((e, i) => {
-      ibu += (1.65 * Math.pow(0.000125, og - 1)) *
+      ibu += (1.65 * Math.pow(0.000125, this.state.og - 1)) *
                 ((1-Math.pow(Math.E, (-0.04 * e.time))) / 4.15) *
                 ((e.aa/100 * e.oz * 7490) / gallons)
     })
-
-    // let ibu = (1.65 * Math.pow(0.000125, og - 1)) *
-    //           ((1-Math.pow(Math.e, (-0.04 * time))) / 4.15) *
-    //           ((aa/100 * oz * 7490) / gallons)
     ibu = Math.round(ibu)
     this.setState({ibu})
   }
@@ -164,7 +190,6 @@ export default class HomePage extends Component {
     let efficiency = 0.75
     let og = 0
     this.state.ingredients.fermentables.forEach(e => {
-      console.log("adding: ", e)
       let point = (e.potential * 1000) - 1000
       og += (e.lb * point)
     })
@@ -190,6 +215,7 @@ export default class HomePage extends Component {
       }),
       success: function (data) {
         let recipe = data.docs[0]
+        console.log("data: ", data)
         this.setState(recipe)
         this.calculateIbu()
         this.calculateOg()

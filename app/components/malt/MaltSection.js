@@ -2,11 +2,11 @@ import React from 'react'
 
 import MaltList from './MaltList'
 import OG from './OG'
-// import MaltForm from './MaltForm'
+import MaltForm from './MaltForm'
 
 const MaltSection = React.createClass({
   handleMaltSubmit: function (malt) {
-
+    this.props.addMalt(malt)
   },
   render: function () {
     return (
@@ -14,9 +14,9 @@ const MaltSection = React.createClass({
         Malt!
         <MaltList malts={this.props.ingredients.fermentables}/>
         <OG og={this.props.og}/>
+        <MaltForm onMaltSubmit={this.handleMaltSubmit}/>
       </div>
     )
-    // <MaltForm onMaltSubmit={this.handleMaltSubmit}/>
   }
 })
 
