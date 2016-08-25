@@ -3,6 +3,7 @@ import * as $ from 'jquery'
 
 import HopSection from '../components/hops/HopSection'
 import MaltSection from '../components/malt/MaltSection'
+import YeastSection from '../components/yeast/YeastSection'
 
 const url = 'https://brewhome.cloudant.com/recipes'
 const pollInterval= 2000
@@ -102,7 +103,14 @@ export default class HomePage extends Component {
           {...this.state}
           addHops={this.addHops.bind(this)}
         />
-        <MaltSection {...this.state}/>
+        <MaltSection
+          {...this.state}
+          addMalt={this.addMalt.bind(this)}
+        />
+      <YeastSection
+          {...this.state}
+          addYeast={this.addYeast.bind(this)}
+        />
       </div>
     )
   }
