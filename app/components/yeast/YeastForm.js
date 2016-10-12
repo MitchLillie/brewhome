@@ -2,7 +2,7 @@ import React from 'react'
 
 const YeastForm = React.createClass({
   getInitialState: function () {
-    return {name: '', attenuation: '', time: '60', cost: '', productionDate: ''}
+    return {name: '', attenuation: '', time: '60', cost: '', productionDate: '', selectedDay: new Date(), initialMonth: new Date()}
   },
   handleNameChange: function (e) {
     this.setState({name: e.target.value})
@@ -19,7 +19,7 @@ const YeastForm = React.createClass({
   handleTemperatureChange: function (e) {
     this.setState({temperature: e.target.value})
   },
-  handleProductionDateChange: function (e) {
+  handleProductionDateChange: function (e, day) {
     this.setState({productionDate: e.target.value})
   },
   handleSubmit: function (e) {
@@ -28,9 +28,19 @@ const YeastForm = React.createClass({
     this.setState({name: '', attenuation: '', temperature: ''})
   },
   render: function () {
+    // <DayPicker
+    //   selectedDays={ day => DateUtils.isSameDay(this.state.selectedDay, day) }
+    //   onDayClick={ this.handleProductionDateChange }
+    // />
+    // <input
+    //   placeholder='Production Date'
+    //   type='date'
+    //   value={this.state.productionDate}
+    //   onChange={this.handleProductionDateChange}
+    // />
     return (
     <div className='hop-form'>
-      <h3>Add yeast</h3>
+      <p>Add yeast</p>
       <form onSubmit={this.handleSubmit}>
         <input
           placeholder='Name'
@@ -68,10 +78,14 @@ const YeastForm = React.createClass({
           value={this.state.productionDate}
           onChange={this.handleProductionDateChange}
         />
-        <input type='submit' value="Add" />
+
+        <input type='submit' value='Add' />
       </form>
     </div>
     )
+  },
+  propTypes: {
+    onYeastSubmit: React.propTypes.func
   }
 })
 

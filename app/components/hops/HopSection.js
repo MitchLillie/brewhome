@@ -18,6 +18,12 @@ const HopSection = React.createClass({
         <IBU ibu={this.props.ibu}/>
       </div>
     )
+  },
+
+  propTypes: {
+    addHops: React.propTypes.func,
+    ingredients: React.propTypes.object,
+    ibu: React.propTypes.ibu
   }
 })
 

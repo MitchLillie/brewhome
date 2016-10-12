@@ -13,6 +13,9 @@ const YeastList = React.createClass({
       </ul>
     </div>
     )
+  },
+  propTypes: {
+    yeast: React.propTypes.array
   }
 })
 

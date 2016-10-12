@@ -15,6 +15,10 @@ const YeastSection = React.createClass({
       </div>
     )
     // <FG fg={this.props.fg}/>
+  },
+  propTypes: {
+    addYeast: React.propTypes.func,
+    ingredients: React.propTypes.array
   }
 })
 

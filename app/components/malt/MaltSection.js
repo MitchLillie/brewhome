@@ -17,6 +17,11 @@ const MaltSection = React.createClass({
         <MaltForm onMaltSubmit={this.handleMaltSubmit}/>
       </div>
     )
+  },
+  propTypes: {
+    addMalt: React.propTypes.func,
+    ingredients: React.propTypes.object,
+    og: React.propTypes.number
   }
 })
 

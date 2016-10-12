@@ -6,7 +6,7 @@ import MaltSection from '../components/malt/MaltSection'
 import YeastSection from '../components/yeast/YeastSection'
 
 const url = 'https://brewhome.cloudant.com/recipes'
-const pollInterval= 2000
+const pollInterval = 2000
 
 const user = '1'
 const gallons = 5
@@ -16,77 +16,77 @@ export default class HomePage extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      // "_id": "xxx",
-      // "user": "xxx",
-      // "name": "American Wheat",
-      // "style": "1D",
-      // "gallons": 5.5,
-      "brewHistory": [
+      // '_id': 'xxx',
+      // 'user': 'xxx',
+      // 'name': 'American Wheat',
+      // 'style': '1D',
+      // 'gallons': 5.5,
+      'brewHistory': [
         // {
-        //   "id": "xxx",
-        //   "date": "2016-06-06T18:25:43.511Z",
-        //   "notes": "Blah blah blah",
-        //   "equipmentId": "xxx"
+        //   'id': 'xxx',
+        //   'date': '2016-06-06T18:25:43.511Z',
+        //   'notes': 'Blah blah blah',
+        //   'equipmentId': 'xxx'
         // }
       ],
-      "ingredients": {
-        "hops": [
+      'ingredients': {
+        'hops': [
           // {
-          //   "name": "Citra",
-          //   "aa": 11.0,
-          //   "oz": 1,
-          //   "time": 60,
-          //   "type": "leaf",
-          //   "costOz": 5.00
+          //   'name': 'Citra',
+          //   'aa': 11.0,
+          //   'oz': 1,
+          //   'time': 60,
+          //   'type': 'leaf',
+          //   'costOz': 5.00
           // }
         ],
-        "fermentables": [
+        'fermentables': [
           // {
-          //   "name": "Briess 2-row",
-          //   "lb": 6,
-          //   "srm": 2.0,
-          //   "potential": 1.039,
-          //   "costLb": 1.50
+          //   'name': 'Briess 2-row',
+          //   'lb': 6,
+          //   'srm': 2.0,
+          //   'potential': 1.039,
+          //   'costLb': 1.50
           // }
         ],
-        "water": [
+        'water': [
           {
-            // "name": "Portland, OR",
-            // "gallons": 7,
-            // "boilTopOff": false,
-            // "fermenterTopOff": false,
-            "baseProfile": {
-              // "Ca": 2.00,
-              // "Mg": 1.00,
-              // "Na": 2.00,
-              // "SO4": 0.00,
-              // "Cl": 2.00,
-              // "HCO3": 9.00,
-              // "pH": 6.7
+            // 'name': 'Portland, OR',
+            // 'gallons': 7,
+            // 'boilTopOff': false,
+            // 'fermenterTopOff': false,
+            'baseProfile': {
+              // 'Ca': 2.00,
+              // 'Mg': 1.00,
+              // 'Na': 2.00,
+              // 'SO4': 0.00,
+              // 'Cl': 2.00,
+              // 'HCO3': 9.00,
+              // 'pH': 6.7
             },
-            "additions": {
-              // "CaCO3": 0,
-              // "NaHCO3": 0,
-              // "CaSO4": 0,
-              // "CaCL2": 0,
-              // "MgSO4": 0,
-              // "NaCl": 0
+            'additions': {
+              // 'CaCO3': 0,
+              // 'NaHCO3': 0,
+              // 'CaSO4': 0,
+              // 'CaCL2': 0,
+              // 'MgSO4': 0,
+              // 'NaCl': 0
             }
           }
         ],
-        "yeast": [
+        'yeast': [
           {
-            // "name": "Citrus",
-            // "attenuation": 70.0,
-            // "flocculation": "high",
-            // "time": 0,
-            // "volume": "2L",
-            "temperature": {
-              // "low": 64.0,
-              // "high": 71.0,
-              // "actual": 67.5
-            },
-            // "productionDate": "2016-06-06T18:25:43.511Z"
+            // 'name': 'Citrus',
+            // 'attenuation': 70.0,
+            // 'flocculation': 'high',
+            // 'time': 0,
+            // 'volume': '2L',
+            'temperature': {
+              // 'low': 64.0,
+              // 'high': 71.0,
+              // 'actual': 67.5
+            }
+            // 'productionDate': '2016-06-06T18:25:43.511Z'
           }
         ]
       }
@@ -98,26 +98,30 @@ export default class HomePage extends Component {
 
   render () {
     return (
-      <div>
-        <HopSection
-          {...this.state}
-          addHops={this.addHops.bind(this)}
-        />
-        <MaltSection
-          {...this.state}
-          addMalt={this.addMalt.bind(this)}
-        />
-      <YeastSection
-          {...this.state}
-          addYeast={this.addYeast.bind(this)}
-        />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-sm-8'>
+            <HopSection
+              {...this.state}
+              addHops={this.addHops.bind(this)}
+            />
+            <MaltSection
+              {...this.state}
+              addMalt={this.addMalt.bind(this)}
+            />
+            <YeastSection
+              {...this.state}
+              addYeast={this.addYeast.bind(this)}
+            />
+          </div>
+        </div>
       </div>
     )
   }
 
   addHops (hop) {
     // TODO: validate
-    // send to server curl -H "Content-Type: application/json" -X POST -d '{"name": "galaxy", "aa": 13.0, "time": 60, "type": "pellet"}' https://brewhome.cloudant.com/hops
+    // send to server curl -H 'Content-Type: application/json' -X POST -d '{'name': 'galaxy', 'aa': 13.0, 'time': 60, 'type': 'pellet'}' https://brewhome.cloudant.com/hops
     let payload = {...this.state}
     payload.ingredients.hops.push(hop)
     $.ajax({
@@ -131,7 +135,7 @@ export default class HomePage extends Component {
       }.bind(this),
       error: function (xhr, status, err) {
         console.error(url, status, err.toString())
-      }.bind(this)
+      }
     })
   }
 
@@ -150,27 +154,27 @@ export default class HomePage extends Component {
       }.bind(this),
       error: function (xhr, status, err) {
         console.error(url, status, err.toString())
-      }.bind(this)
+      }
     })
   }
 
   addYeast (yeast) {
     // TODO: validate
-    // let payload = {...this.state}
-    // payload.ingredients.yeast.push(malt)
-    // $.ajax({
-    //   url: url + '/' + this.state._id,
-    //   dataType: 'json',
-    //   contentType: 'application/json',
-    //   type: 'PUT',
-    //   data: JSON.stringify(payload),
-    //   success: function (data) {
-    //     this.loadFromServer()
-    //   }.bind(this),
-    //   error: function (xhr, status, err) {
-    //     console.error(url, status, err.toString())
-    //   }.bind(this)
-    // })
+    let payload = {...this.state}
+    payload.ingredients.yeast.push(yeast)
+    $.ajax({
+      url: url + '/' + this.state._id,
+      dataType: 'json',
+      contentType: 'application/json',
+      type: 'PUT',
+      data: JSON.stringify(payload),
+      success: function (data) {
+        this.loadFromServer()
+      }.bind(this),
+      error: function (xhr, status, err) {
+        console.error(url, status, err.toString())
+      }
+    })
   }
 
   calculateIbu () {
@@ -179,8 +183,8 @@ export default class HomePage extends Component {
     // via http://www.rooftopbrew.net/ibu.php
     this.state.ingredients.hops.forEach((e, i) => {
       ibu += (1.65 * Math.pow(0.000125, this.state.og - 1)) *
-                ((1-Math.pow(Math.E, (-0.04 * e.time))) / 4.15) *
-                ((e.aa/100 * e.oz * 7490) / gallons)
+             ((1 - Math.pow(Math.E, (-0.04 * e.time))) / 4.15) *
+             ((e.aa / 100 * e.oz * 7490) / gallons)
     })
     ibu = Math.round(ibu)
     this.setState({ibu})
@@ -215,14 +219,14 @@ export default class HomePage extends Component {
       }),
       success: function (data) {
         let recipe = data.docs[0]
-        console.log("data: ", data)
+        console.log('data: ', data)
         this.setState(recipe)
         this.calculateIbu()
         this.calculateOg()
       }.bind(this),
       error: function (xhr, status, err) {
         console.error(url, status, err.toString())
-      }.bind(this)
+      }
     })
   }
 
@@ -233,5 +237,5 @@ export default class HomePage extends Component {
 
 }
 
-// curl -H "Content-Type: application/json" -X POST -d '{"name": "galaxy", "aa": 13.0, "time": 60, "type": "pellet"}' https://brewhome.cloudant.com/hops
+// curl -H 'Content-Type: application/json' -X POST -d '{'name': 'galaxy', 'aa': 13.0, 'time': 60, 'type': 'pellet'}' https://brewhome.cloudant.com/hops
 // curl https://brewhome.cloudant.com/hops/74af3937271303b42023b40e19892b92

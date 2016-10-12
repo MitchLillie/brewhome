@@ -13,6 +13,9 @@ const HopList = React.createClass({
       </ul>
     </div>
     )
+  },
+  propTypes: {
+    hops: React.propTypes.array
   }
 })
 

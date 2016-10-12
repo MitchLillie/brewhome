@@ -27,7 +27,7 @@ const HopForm = React.createClass({
   render: function () {
     return (
     <div className='malt-form'>
-      <h3>Add malt</h3>
+      <p>Add malt</p>
       <form onSubmit={this.handleSubmit}>
         <input
           placeholder='Name'
@@ -59,10 +59,14 @@ const HopForm = React.createClass({
           value={this.state.costLb}
           onChange={this.handleCostLbChange}
         />
-        <input type='submit' value="Add" />
+        <input type='submit' value='Add' />
       </form>
     </div>
     )
+  },
+
+  propTypes: {
+    onMaltSubmit: React.propTypes.func
   }
 })
 

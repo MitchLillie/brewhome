@@ -13,6 +13,9 @@ const MaltList = React.createClass({
       </ul>
     </div>
     )
+  },
+  propTypes: {
+    malts: React.propTypes.array
   }
 })
 
