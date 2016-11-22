@@ -29,85 +29,79 @@ const HopForm = React.createClass({
   },
   render: function () {
     return (
-      <div>
-        <input type='submit' value='+' onClick={this.onClick} className={this.state.hide ? '' : 'hidden'}/>
-        <div className={this.state.hide ? 'hidden hop-form' : 'hop-form'}>
-          <label htmlFor='name'>Add hop</label>
-          <form onSubmit={this.handleSubmit} className='form-tight'>
-            <div className='row'>
-              <div className='col-sm-4'>
-                <input
-                  placeholder='Name'
-                  type='text'
-                  id='name'
-                  value={this.state.name}
-                  onChange={this.handleNameChange}
-                  className='form-control'
-                />
-              </div>
-              <div className='col-sm-1'>
-                <input
-                  placeholder='AA%'
-                  type='text'
-                  value={this.state.aa}
-                  onChange={this.handleAAChange}
-                  className='form-control'
-                />
-              </div>
-              <div className='col-sm-1'>
-                <input
-                  placeholder='oz'
-                  type='text'
-                  value={this.state.oz}
-                  onChange={this.handleOzChange}
-                  className='form-control'
-                />
-              </div>
-              <div className='col-sm-2'>
-                <select
-                  value={this.state.time}
-                  onChange={this.handleTimeChange}
-                  className='form-control'
-                >
-                  <option value='60'>
-                    60 min
-                  </option>
-                  <option value='20'>
-                    20 min
-                  </option>
-                  <option value='10'>
-                    10 min
-                  </option>
-                  <option value='0'>
-                    0 min
-                  </option>
-                </select>
-              </div>
-              <div className='col-sm-2'>
-                <select
-                  value={this.state.type}
-                  onChange={this.handleTypeChange}
-                  className='form-control'
-                >
-                  <option value='pellet'>
-                    pellet
-                  </option>
-                  <option value='leaf'>
-                    leaf
-                  </option>
-                </select>
-              </div>
-              <div className='col-sm-1'>
-                <input type='submit' value='Add' className='btn btn-default'/>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+      <tr className='collapse' id='hop-form-input'>
+        <td>
+          <input
+            placeholder='Name'
+            type='text'
+            id='name'
+            className='form-control'
+            form='hop-form'
+            value={this.state.name}
+            onChange={this.handleNameChange}
+          />
+        </td>
+        <td>
+          <input
+            placeholder='AA%'
+            type='text'
+            form='hop-form'
+            value={this.state.aa}
+            onChange={this.handleAAChange}
+            className='form-control'
+          />
+        </td>
+        <td>
+          <input
+            placeholder='oz'
+            type='text'
+            form='hop-form'
+            value={this.state.oz}
+            onChange={this.handleOzChange}
+            className='form-control'
+          />
+        </td>
+        <td>
+          <select
+            value={this.state.time}
+            onChange={this.handleTimeChange}
+            className='form-control'
+            form='hop-form'
+          >
+            <option value='60'>
+              60 min
+            </option>
+            <option value='20'>
+              20 min
+            </option>
+            <option value='10'>
+              10 min
+            </option>
+            <option value='0'>
+              0 min
+            </option>
+          </select>
+        </td>
+        <td>
+          <select
+            value={this.state.type}
+            onChange={this.handleTypeChange}
+            className='form-control'
+            form='hop-form'
+          >
+            <option value='pellet'>
+              pellet
+            </option>
+            <option value='leaf'>
+              leaf
+            </option>
+          </select>
+        </td>
+      </tr>
     )
   },
   propTypes: {
-    onHopSubmit: React.propTypes.func
+    onHopSubmit: React.PropTypes.func
   }
 })
 

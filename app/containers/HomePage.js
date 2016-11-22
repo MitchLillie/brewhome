@@ -99,15 +99,21 @@ export default class HomePage extends Component {
   render () {
     return (
       <div className='container'>
+        <form method='POST' id='hop-form'>
+        </form>
+        <form method='POST' id='fermentable-form'>
+        </form>
+        <form method='POST' id='yeast-form'>
+        </form>
         <div className='row'>
-          <div className='col-sm-8'>
-            <HopSection
-              {...this.state}
-              addHops={this.addHops.bind(this)}
-            />
+          <div className='col-sm-4'>
             <MaltSection
               {...this.state}
               addMalt={this.addMalt.bind(this)}
+            />
+            <HopSection
+              {...this.state}
+              addHops={this.addHops.bind(this)}
             />
             <YeastSection
               {...this.state}
@@ -118,6 +124,461 @@ export default class HomePage extends Component {
       </div>
     )
   }
+
+//   <div class="container">
+//   <br>
+// </div>
+// <form method="POST" id="hop-form">
+// </form>
+// <form method="POST" id="fermenable-form">
+// </form>
+// <form method="POST" id="yeast-form">
+// </form>
+// <div class="container">
+//   <div class="row">
+//     <div class="col-md-4">
+//       <div class="panel panel-default">
+//         <div class="panel-heading">
+//           <h5>Yeast <span class="glyphicon glyphicon-cog pull-right"></span></h5>
+//
+//         </div>
+//         <div class="panel-body">
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td class="col-md-8">
+//                 Imperial Organic Citrus
+//               </td>
+//               <td class="col-md-4">
+//                 Added: day 0
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Brett dregs
+//               </td>
+//               <td>
+//                 Added: day 8
+//               </td>
+//             </tr>
+//             <tr class="collapse" id="yeast-form-input">
+//               <td>
+//                 <input type="text" class="form-control" form="yeast-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="yeast-form" />
+//               </td>
+//             </tr>
+//             <tr>
+//               <td colspan="5">
+//                 <button type="button" data-toggle="collapse" data-target="#yeast-form-input" class="btn btn-default">+</button>
+//               </td>
+//             </tr>
+//           </table>
+//         </div>
+//       </div>
+//       <div class="panel panel-default">
+//         <div class="panel-heading">
+//           <h5>Fermentables <span class="glyphicon glyphicon-cog pull-right"></span></h5>
+//         </div>
+//         <div class="panel-body">
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td class="col-md-6">
+//                 Briess 2-row
+//               </td>
+//               <td class="col-md-2">
+//                 8 lb
+//               </td>
+//               <td class="col-md-4">
+//                 2.0 srm
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Munich
+//               </td>
+//               <td>
+//                 3 lb
+//               </td>
+//               <td>
+//                 2.0 srm
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Carafa Special III
+//               </td>
+//               <td>
+//                 4 oz
+//               </td>
+//               <td>
+//                 200.0 srm
+//               </td>
+//             </tr>
+//             <tr class="collapse" id="fermentable-form-input">
+//               <td>
+//                 <input type="text" class="form-control" form="fermenable-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="fermentable-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="fermentable-form" />
+//               </td>
+//             </tr>
+//             <tr>
+//               <td colspan="5">
+//                 <button type="button" data-toggle="collapse" data-target="#fermentable-form-input" class="btn btn-default">+</button>
+//               </td>
+//             </tr>
+//           </table>
+//         </div>
+//       </div>
+//       <div class="panel panel-default">
+//         <div class="panel-heading">
+//           <h5>Hops <span class="glyphicon glyphicon-cog pull-right"></span></h5>
+//         </div>
+//         <div class="panel-body">
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td>
+//                 Simcoe
+//               </td>
+//               <td>
+//                 1.5 oz
+//               </td>
+//               <td>
+//                 12.3%
+//               </td>
+//               <td>
+//                 60 min
+//               </td>
+//               <td>
+//                 pellet
+//               </td>
+//             </tr>
+//             <tr>
+//               <td class="col-md-4">
+//                 Citra
+//               </td>
+//               <td class="col-md-2">
+//                 1 oz
+//               </td>
+//               <td class="col-md-2">
+//                 11%
+//               </td>
+//               <td class="col-md-2">
+//                 10 min
+//               </td>
+//               <td class="col-md-2">
+//                 pellet
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Saaz
+//               </td>
+//               <td>
+//                 1 oz
+//               </td>
+//               <td>
+//                 3.3%
+//               </td>
+//               <td>
+//                 0 min
+//               </td>
+//               <td>
+//                 pellet
+//               </td>
+//             </tr>
+//             <tr class="dry-hop">
+//               <td>
+//                 Citra
+//               </td>
+//               <td>
+//                 1 oz
+//               </td>
+//               <td>
+//                 3.3%
+//               </td>
+//               <td>
+//                 3 days
+//               </td>
+//               <td>
+//                 pellet
+//               </td>
+//             </tr>
+//             <tr class="collapse" id="hop-form-input">
+//               <td>
+//                 <input type="text" class="form-control" form="hop-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="hop-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="hop-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="hop-form" />
+//               </td>
+//               <td>
+//                 <input type="text" class="form-control" form="hop-form" />
+//               </td>
+//             </tr>
+//             <tr>
+//               <td colspan="5">
+//                 <button type="button" data-toggle="collapse" data-target="#hop-form-input" class="btn btn-default">+</button>
+//               </td>
+//             </tr>
+//           </table>
+//         </div>
+//       </div>
+//     </div>
+//     <div class="col-md-4">
+//       <div class="panel panel-default">
+//         <div class="panel-heading">
+//           <h5>Water <span class="glyphicon glyphicon-cog pull-right"></span></h5>
+//         </div>
+//         <div class="panel-body">
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td rowspan="8">
+//                 Portland, OR, USA
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Ca<sup>+2</sup>
+//               </td>
+//               <td>
+//                 2
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Mg<sup>+2</sup>
+//               </td>
+//               <td>
+//                 1
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Na<sup>+</sup>
+//               </td>
+//               <td>
+//                 3
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Cl<sup>-</sup>
+//               </td>
+//               <td>
+//                 3
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 SO<sub>4</sub><sup>-2</sup>
+//               </td>
+//               <td>
+//                 3
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Alkalinity
+//               </td>
+//               <td>
+//                 11 (CaCO<sub>3</sub>)
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 pH
+//               </td>
+//               <td>
+//                 7.9
+//               </td>
+//             </tr>
+//           </table>
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td class="active">
+//                 Target: Chimay
+//               </td>
+//             </tr>
+//           </table>
+//           <table class="table table-hover table-condensed table-no-bottom">
+//             <tr>
+//               <td rowspan="10">
+//                 Additions
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Gypsum
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Epsom Salt
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Table salt
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Calcium chloride
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Magnesium chloride
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Chalk
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Baking soda
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Slaked lime
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Lye
+//               </td>
+//               <td>
+//                 0 g
+//               </td>
+//             </tr>
+//
+//           </table>
+//         </div>
+//       </div>
+//     </div>
+//     <div class="col-md-4">
+//       <div class="panel panel-primary">
+//         <div class="panel-heading">
+//           <h5>Hodge Podge Pale</h5>
+//         </div>
+//         <div class="panel-body">
+//           <table class="table table-hover table-condensed table-no-bottom td-right">
+//             <tr>
+//               <td>
+//                 Style
+//               </td>
+//               <td>
+//                 18B. American Pale Ale
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 SRM
+//               </td>
+//               <td>
+//                 <div class="square" style="background:#EA8F00;">
+//                   <span>7</span>
+//                 </div>
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//
+//               </td>
+//               <td>
+//                 5 gallons
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 OG - FG
+//               </td>
+//               <td>
+//                 1.058 - 1.008
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 ABV
+//               </td>
+//               <td>
+//                 5.2%
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 IBU
+//               </td>
+//               <td>
+//                 23
+//               </td>
+//             </tr>
+//             <tr>
+//               <td>
+//                 Style
+//               </td>
+//               <td>
+//                 18B. American Pale Ale
+//               </td>
+//             </tr>
+//           </table>
+//         </div>
+//       </div>
+//       <ul class="nav nav-pills">
+//         <li class="active">
+//           <a href="#">Recipe</a>
+//         </li>
+//         <li>
+//           <a href="#">Mash</a>
+//         </li>
+//         <li >
+//           <a data-toggle="tooltip" data-placement="bottom" title="Your selected equipment profile is not large enough" href="#">Equipment</a>
+//           <span class="badge badge-notify">!</span>
+//         </li>
+//         <li>
+//           <a href="#">Log</a>
+//         </li>
+//       </ul>
+//     </div>
+//   </div>
+// </div>
 
   addHops (hop) {
     // TODO: validate

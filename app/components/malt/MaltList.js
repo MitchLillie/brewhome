@@ -1,5 +1,6 @@
 import React from 'react'
 import Malt from './Malt'
+import MaltForm from './MaltForm'
 
 const MaltList = React.createClass({
   render: function () {
@@ -7,15 +8,22 @@ const MaltList = React.createClass({
       return <Malt {...malt} key={i + 1} />
     })
     return (
-    <div className='malt-list'>
-      <ul>
+    <table className='table table-hover table-condensed table-no-bottom malt-list'>
+      <tbody>
         {list}
-      </ul>
-    </div>
+        <MaltForm onMaltSubmit={this.props.onMaltSubmit}/>
+        <tr>
+          <td colSpan='5'>
+            <button type='button' data-toggle='collapse' data-target='#fermentable-form-input' className='btn btn-default'>+</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     )
   },
   propTypes: {
-    malts: React.propTypes.array
+    malts: React.PropTypes.array,
+    onMaltSubmit: React.PropTypes.func
   }
 })
 

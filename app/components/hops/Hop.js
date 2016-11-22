@@ -3,13 +3,13 @@ import React from 'react'
 const Hop = React.createClass({
   render: function () {
     return (
-      <li>
-        <b>{this.props.name}</b><span> </span>
-        <span>{this.props.aa}%</span><span> </span>
-        <span>{this.props.oz} oz</span><span> </span>
-        <span>{this.props.time} min</span><span> </span>
-        <span>{this.props.type}</span>
-      </li>
+      <tr>
+        <td className='col-md-4'>{this.props.name}</td>
+        <td className='col-md-2'>{this.props.aa}%</td>
+        <td className='col-md-2'>{this.props.oz} oz</td>
+        <td className='col-md-2'>{this.props.time} min</td>
+        <td className='col-md-2'>{this.props.type}</td>
+      </tr>
     )
   },
   propTypes: {

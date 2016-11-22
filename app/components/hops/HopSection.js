@@ -11,19 +11,21 @@ const HopSection = React.createClass({
 
   render: function () {
     return (
-      <div className='hopBox'>
-        IBU calculator
-        <HopList hops={this.props.ingredients.hops}/>
-        <HopForm onHopSubmit={this.handleHopSubmit}/>
-        <IBU ibu={this.props.ibu}/>
+      <div className='hopBox panel panel-default'>
+        <div className='panel-heading'>
+          <h5>Hops <span className='glyphicon glyphicon-cog pull-right'></span></h5>
+        </div>
+        <div className='panel-body'>
+          <HopList hops={this.props.ingredients.hops} handleHopSubmit={this.handleHopSubmit}/>
+        </div>
       </div>
     )
   },
 
   propTypes: {
-    addHops: React.propTypes.func,
-    ingredients: React.propTypes.object,
-    ibu: React.propTypes.ibu
+    addHops: React.PropTypes.func,
+    ingredients: React.PropTypes.object,
+    ibu: React.PropTypes.number
   }
 })
 

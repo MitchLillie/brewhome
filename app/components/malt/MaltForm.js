@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HopForm = React.createClass({
+const MaltForm = React.createClass({
   getInitialState: function () {
     return {name: '', lb: '', srm: '', potential: '', costLb: ''}
   },
@@ -26,48 +26,94 @@ const HopForm = React.createClass({
   },
   render: function () {
     return (
-    <div className='malt-form'>
-      <p>Add malt</p>
-      <form onSubmit={this.handleSubmit}>
-        <input
-          placeholder='Name'
-          type='text'
-          value={this.state.name}
-          onChange={this.handleNameChange}
-        />
-        <input
-          placeholder='Pounds'
-          type='text'
-          value={this.state.lb}
-          onChange={this.handleLbChange}
-        />
-        <input
-          placeholder='SRM'
-          type='text'
-          value={this.state.srm}
-          onChange={this.handleSRMChange}
-        />
-        <input
-          placeholder='Potential'
-          type='text'
-          value={this.state.potential}
-          onChange={this.handlePotentialChange}
-        />
-        <input
-          placeholder='$/lb'
-          type='text'
-          value={this.state.costLb}
-          onChange={this.handleCostLbChange}
-        />
-        <input type='submit' value='Add' />
-      </form>
-    </div>
+      <tr className='collapse' id='fermentable-form-input'>
+        <td>
+          <input
+            placeholder='Name'
+            type='text'
+            className='form-control'
+            form='fermentable-form'
+            value={this.state.name}
+            onChange={this.handleNameChange}
+          />
+        </td>
+        <td>
+          <input
+            placeholder='Pounds'
+            type='text'
+            className='form-control'
+            form='fermentable-form'
+            value={this.state.lb}
+            onChange={this.handleLbChange}
+          />
+        </td>
+        <td>
+          <input
+            placeholder='SRM'
+            type='text'
+            className='form-control'
+            form='fermentable-form'
+            value={this.state.srm}
+            onChange={this.handleSRMChange}
+          />
+        </td>
+      </tr>
     )
   },
+//   <tr class="collapse" id="fermentable-form-input">
+//   <td>
+//     <input type="text" class="form-control" form="fermentable-form" />
+//   </td>
+//   <td>
+//     <input type="text" class="form-control" form="fermentable-form" />
+//   </td>
+//   <td>
+//     <input type="text" class="form-control" form="fermentable-form" />
+//   </td>
+// </tr>
+// <tr>
+//   <td colspan="5">
+//     <button type="button" data-toggle="collapse" data-target="#fermentable-form-input" class="btn btn-default">+</button>
+//   </td>
+// </tr>
 
+
+// <form onSubmit={this.handleSubmit}>
+//   <input
+//     placeholder='Name'
+//     type='text'
+//     value={this.state.name}
+//     onChange={this.handleNameChange}
+//   />
+//   <input
+//     placeholder='Pounds'
+//     type='text'
+//     value={this.state.lb}
+//     onChange={this.handleLbChange}
+//   />
+//   <input
+//     placeholder='SRM'
+//     type='text'
+//     value={this.state.srm}
+//     onChange={this.handleSRMChange}
+//   />
+//   <input
+//     placeholder='Potential'
+//     type='text'
+//     value={this.state.potential}
+//     onChange={this.handlePotentialChange}
+//   />
+//   <input
+//     placeholder='$/lb'
+//     type='text'
+//     value={this.state.costLb}
+//     onChange={this.handleCostLbChange}
+//   />
+//   <input type='submit' value='Add' />
+// </form>
   propTypes: {
-    onMaltSubmit: React.propTypes.func
+    onMaltSubmit: React.PropTypes.func
   }
 })
 
-export default HopForm
+export default MaltForm

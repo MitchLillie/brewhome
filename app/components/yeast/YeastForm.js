@@ -39,53 +39,32 @@ const YeastForm = React.createClass({
     //   onChange={this.handleProductionDateChange}
     // />
     return (
-    <div className='hop-form'>
-      <p>Add yeast</p>
-      <form onSubmit={this.handleSubmit}>
-        <input
-          placeholder='Name'
-          type='text'
-          value={this.state.name}
-          onChange={this.handleNameChange}
-        />
-        <input
-          placeholder='Attenuation %'
-          type='text'
-          value={this.state.attenuation}
-          onChange={this.handleAttenuationChange}
-        />
-        <input
-          placeholder='°F'
-          type='text'
-          value={this.state.temperature}
-          onChange={this.handleTemperatureChange}
-        />
-        <input
-          placeholder='Time added'
-          type='text'
-          value={this.state.time}
-          onChange={this.handleTimeChange}
-        />
-        <input
-          placeholder='$'
-          type='text'
-          value={this.state.cost}
-          onChange={this.handleCostChange}
-        />
-        <input
-          placeholder='Production Date'
-          type='date'
-          value={this.state.productionDate}
-          onChange={this.handleProductionDateChange}
-        />
-
-        <input type='submit' value='Add' />
-      </form>
-    </div>
+      <tr className='collapse' id='yeast-form-input'>
+        <td>
+          <input
+            placeholder='Name'
+            type='text'
+            className='form-control'
+            form='yeast-form'
+            value={this.state.name}
+            onChange={this.handleNameChange}
+          />
+        </td>
+        <td>
+          <input
+            placeholder='Time added'
+            type='text'
+            className='form-control'
+            form='yeast-form'
+            value={this.state.time}
+            onChange={this.handleTimeChange}
+          />
+        </td>
+      </tr>
     )
   },
   propTypes: {
-    onYeastSubmit: React.propTypes.func
+    onYeastSubmit: React.PropTypes.func
   }
 })
 

@@ -3,22 +3,20 @@ import React from 'react'
 const Malt = React.createClass({
   render: function () {
     return (
-    <li>
-      <b>{this.props.name}</b><span> </span>
-      <span>{this.props.lb} lb</span><span> </span>
-      <span>{this.props.srm} srm</span><span> </span>
-      <span>{this.props.potential} potential</span><span> </span>
-      <span>{this.props.costLb} $/lb</span>
-    </li>
+    <tr>
+      <td className='col-md-6'>{this.props.name}</td>
+      <td className='col-md-2'>{this.props.lb} lb</td>
+      <td className='col-md-4'>{this.props.srm} srm</td>
+    </tr>
     )
   },
 
   propTypes: {
-    name: React.propTypes.string,
-    lb: React.propTypes.number,
-    srm: React.propTypes.number,
-    potential: React.propTypes.number,
-    costLb: React.propTypes.number
+    name: React.PropTypes.string,
+    lb: React.PropTypes.number,
+    srm: React.PropTypes.number,
+    potential: React.PropTypes.number,
+    costLb: React.PropTypes.number
   }
 })
 
